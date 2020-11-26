@@ -1,0 +1,497 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MWM.API.Account.Service</name>
+    </assembly>
+    <members>
+        <member name="M:MWM.API.Account.Service.Application.AccountTraffic.AccountTrafficService.GenerateId">
+            <summary>
+            產生Account Id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Application.AccountTraffic.AccountTrafficService.CheckNameExistAsync(System.Int32,System.String)">
+            <summary>
+            確認帳號名稱重複
+            </summary>
+            <param name="id"></param>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="P:MWM.API.Account.Service.Application.Bulletin.Contract.CreateUpdateBulletinRequest.sequence">
+            <summary>
+            置頂排序 1
+            </summary>
+        </member>
+        <member name="P:MWM.API.Account.Service.Application.Bulletin.Contract.CreateUpdateBulletinRequest.title">
+            <summary>
+            公告標題
+            </summary>
+        </member>
+        <member name="P:MWM.API.Account.Service.Application.Bulletin.Contract.CreateUpdateBulletinRequest.body">
+            <summary>
+            公告主體
+            </summary>
+        </member>
+        <member name="P:MWM.API.Account.Service.Application.Bulletin.Contract.CreateUpdateBulletinRequest.pic_path">
+            <summary>
+            附圖路徑
+            </summary>
+        </member>
+        <member name="M:MWM.API.Account.Service.Application.PagingLimitOffset.GetOffset(System.Int32,System.Int32)">
+            <summary>
+            select * from table limit numberperpage offset (pagenumber-1)*numberperpage
+            </summary>
+            <param name="pageIndex"></param>
+            <param name="pageRows"></param>
+            <returns></returns>
+        </member>
+        <member name="P:MWM.API.Account.Service.Application.Message.Contract.CreateUpdateMessageRequest.account_id">
+            <summary>
+            發訊者ID
+            </summary>
+        </member>
+        <member name="P:MWM.API.Account.Service.Application.Message.Contract.CreateUpdateMessageRequest.topic_id">
+            <summary>
+            訊息主題Id
+            </summary>
+        </member>
+        <member name="P:MWM.API.Account.Service.Application.Message.Contract.CreateUpdateMessageRequest.body">
+            <summary>
+            訊息主體
+            </summary>
+        </member>
+        <member name="P:MWM.API.Account.Service.Application.Message.Contract.CreateUpdateMessageRequest.type">
+            <summary>
+            訊息回復狀態  0 :提問,1:回應
+            </summary>
+        </member>
+        <member name="M:MWM.API.Account.Service.Application.Message.IMessageService.GetAll(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="accountId"></param>
+            <returns></returns>
+        </member>
+        <member name="P:MWM.API.Account.Service.Application.Message.QueryCondition.state">
+            <summary>
+            訊息回復狀態
+            </summary>
+        </member>
+        <member name="M:MWM.API.Account.Service.Controllers.AccountManagerController.GetTrafficAll(System.String,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            取得所有流量主帳號清單
+            </summary>
+            <param name="login_name"></param>
+            <param name="state"></param>
+            <param name="page"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Controllers.AccountManagerController.Login(MWM.API.Account.Service.Application.AccountManager.Contract.LoginManagerRequest)">
+            <summary>
+            Login
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Controllers.AccountManagerController.GetManagerInfo(System.Int32)">
+            <summary>
+            取得指定帳號資訊
+            </summary>
+            <param name="account_id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Controllers.AccountManagerController.GetManagerAll(MWM.API.Account.Service.Application.AccountManager.Contract.ManagerListRequest)">
+            <summary>
+            取得所有帳號資訊
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Controllers.AccountManagerController.CreateManagerAccount(MWM.API.Account.Service.Application.AccountManager.Contract.ManagerRequest)">
+            <summary>
+            建立帳號
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Controllers.AccountManagerController.UpdateManagerAccount(MWM.API.Account.Service.Application.AccountManager.Contract.ManagerRequest)">
+            <summary>
+            更新帳號
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Controllers.AccountManagerController.DeleteManagerAccount(System.Int32)">
+            <summary>
+            刪除帳號
+            </summary>
+            <param name="account_id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Controllers.AccountTrafficController.LoginTraffic(MWM.API.Account.Service.Application.AccountTraffic.Contract.LoginTrafficRequest)">
+            <summary>
+            流量主Login
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Controllers.AccountTrafficController.CreateTraffic(MWM.API.Account.Service.Application.AccountTraffic.Contract.TrafficRequest)">
+            <summary>
+            建立流量主帳號
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Controllers.AccountTrafficController.GetTrafficInfo(System.Int32)">
+            <summary>
+            取得流量主帳號資訊
+            </summary>
+            <param name="account_id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Controllers.AccountTrafficController.UpdateTraffic(MWM.API.Account.Service.Application.AccountTraffic.Contract.TrafficUpdateRequest)">
+            <summary>
+            更新流量主帳號
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Controllers.AccountTrafficController.UpdateTrafficPassword(MWM.API.Account.Service.Application.AccountTraffic.Contract.UpdateTrafficPasswordRequest)">
+            <summary>
+            修改流量主密碼
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Controllers.AccountTrafficController.ForgetPassword(System.String,System.String,System.String)">
+            <summary>
+            流量主提出忘記密碼請求
+            </summary>
+            <param name="account_id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Controllers.AccountTrafficController.ForgetPasswordReset(MWM.API.Account.Service.Application.AccountTraffic.Contract.ResetPasswordRequest)">
+            <summary>
+            流量主忘記密碼重置
+            </summary>
+            <param name="token"></param>
+            <param name="password"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Controllers.AccountTrafficController.ResetTrafficPassword(System.Int32)">
+            <summary>
+            重置流量主密碼
+            </summary>
+            <param name="account_id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Controllers.BulletinController.GetAll(System.Int32,System.Int32)">
+            <summary>
+            取得公告消息列表
+            </summary>
+            <param name="page"></param>
+            <param name="rows"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Controllers.BulletinController.GetById(System.Int64)">
+            <summary>
+            取得公告消息ByID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Controllers.BulletinController.Create(MWM.API.Account.Service.Application.Bulletin.Contract.CreateUpdateBulletinRequest)">
+            <summary>
+            建立公告訊息
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Controllers.BulletinController.Update(MWM.API.Account.Service.Application.Bulletin.Contract.CreateUpdateBulletinRequest)">
+            <summary>
+            編輯公告訊息
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Controllers.BulletinController.Delete(System.Int64)">
+            <summary>
+            刪除公告訊息
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Controllers.DefaultController.Get">
+            <summary>
+            default 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Controllers.MessageController.GetAll(System.Int32,System.Int32)">
+            <summary>
+            取得所有客服訊息
+            </summary>
+            <param name="page"></param>
+            <param name="rows"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Controllers.MessageController.GetByTopicId(System.Int64,System.Int32,System.Int32)">
+            <summary>
+            依問題取得歷程( 客服中心1-1 )
+            </summary>
+            <param name="topic_id"></param>
+            <param name="page"></param>
+            <param name="rows"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Controllers.MessageController.GetByMerchantId(System.Int32,System.Int32)">
+            <summary>
+            依商戶取得訊息列表-標題及標題ID
+            </summary>
+            <param name="page"></param>
+            <param name="rows"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Controllers.MessageController.QueryByCondition(MWM.API.Account.Service.Application.Message.QueryCondition)">
+            <summary>
+            依照搜尋條件取得訊息列表
+            </summary>
+            <param name="condition"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Controllers.MessageController.Create(MWM.API.Account.Service.Application.Message.Contract.CreateUpdateMessageRequest)">
+            <summary>
+             客服訊息建立/回復
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Controllers.MessageController.Update(MWM.API.Account.Service.Application.Message.Contract.CreateUpdateMessageRequest)">
+            <summary>
+            編輯客服訊息
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Controllers.MessageController.Delete(System.Int64)">
+            <summary>
+             刪除客服訊息
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Controllers.MessageController.ReadState(System.Int64,System.Int32)">
+            <summary>
+            更改訊息狀態
+            </summary>
+            <param name="topic_id">TOPIC ID</param>
+            <param name="state">0:新訊息,1:客服(管理員)已讀,2:使用者(流量主)已讀,3客服新訊息(管理員回覆) ,99:無效</param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Controllers.PermissionController.GetRole(System.Int32)">
+            <summary>
+            取得單一角色訊息
+            </summary>
+            <param name="role_id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Controllers.PermissionController.GetRoleList">
+            <summary>
+            取得所有角色清單
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Controllers.PermissionController.CreateRole(MWM.API.Account.Service.Application.Permission.RoleRequest)">
+            <summary>
+            建立角色
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Controllers.PermissionController.UpdateRole(MWM.API.Account.Service.Application.Permission.RoleRequest)">
+            <summary>
+            更新角色訊息
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Controllers.PermissionController.DeleteRole(System.Int32)">
+            <summary>
+            刪除角色
+            </summary>
+            <param name="role_id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Controllers.PermissionController.CreateOrUpdateRoleFunctionMapping(MWM.API.Account.Service.Application.Permission.RoleFuntionRequest)">
+            <summary>
+            建立、更新角色權限
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Domain.AccountManager.AccountManagerRepository.GetByName(System.String)">
+            <summary>
+            取得帳號資訊by帳號
+            </summary>
+            <param name="login_name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Domain.AccountManager.AccountManagerRepository.Get(System.Int32)">
+            <summary>
+            取得帳號資訊by帳號id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Domain.AccountManager.AccountManagerRepository.GetAll(MWM.API.Account.Service.Domain.AccountManager.ListEntity)">
+            <summary>
+            取得帳號資訊清單
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Domain.AccountManager.AccountManagerRepository.Create(MWM.API.Account.Service.Domain.AccountManager.AccountManagerEntity)">
+            <summary>
+            建立帳號
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Domain.AccountManager.AccountManagerRepository.Update(MWM.API.Account.Service.Domain.AccountManager.AccountManagerEntity)">
+            <summary>
+            更新帳號資訊
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Domain.AccountManager.AccountManagerRepository.ChangeAccountState(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            變更帳號狀態(啟用、停用)
+            </summary>
+            <param name="id"></param>
+            <param name="state"></param>
+            <param name="time"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Domain.AccountManager.AccountManagerRepository.CheckId(System.Int32)">
+            <summary>
+            確認帳號id是否重複
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Domain.AccountTraffic.AccountRepository.UpdateLoginFailCount(System.Int32,System.Int64,System.String,System.Int32)">
+            <summary>
+            紀錄帳號登入失敗次數
+            </summary>
+            <param name="id"></param>
+            <param name="timeStamp"></param>
+            <param name="ip"></param>
+            <param name="failCount"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Domain.AccountTraffic.AccountRepository.Create(MWM.API.Account.Service.Domain.Account.AccountEntity)">
+            <summary>
+            建立帳號
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Domain.AccountTraffic.AccountRepository.Update(MWM.API.Account.Service.Domain.Account.AccountEntity)">
+            <summary>
+            更新帳號資訊
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Domain.AccountTraffic.AccountRepository.UpdateContactAccount(System.Int32,System.String)">
+            <summary>
+            更新聯絡資訊
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Domain.AccountTraffic.AccountRepository.ResetPassword(System.Int32,System.String)">
+            <summary>
+            重置密碼
+            </summary>
+            <param name="accountId"></param>
+            <param name="defaultPassword"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Domain.AccountTraffic.AccountRepository.ChangeAccountState(System.Int32,System.Int32)">
+            <summary>
+            變更帳號狀態(啟用、停用)
+            </summary>
+            <param name="accountId"></param>
+            <param name="state"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Domain.AccountTraffic.AccountRepository.Get(System.Int32)">
+            <summary>
+            取得帳號資訊by帳號id
+            </summary>
+            <param name="accountId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Domain.AccountTraffic.AccountRepository.GetByName(System.String)">
+            <summary>
+            取得帳號資訊by登入帳號
+            </summary>
+            <param name="account"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Domain.AccountTraffic.AccountRepository.GetContactAccount(System.Int32)">
+            <summary>
+            取得帳號聯絡資訊
+            </summary>
+            <param name="accountId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Domain.AccountTraffic.AccountRepository.CheckId(System.Int32)">
+            <summary>
+            確認帳號id是否重複
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Account.Service.Domain.AccountTraffic.AccountRepository.GetTrafficAll(MWM.API.Account.Service.Domain.Account.ListEntity)">
+            <summary>
+            取得所有下階帳號資訊(包含自己)
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MWM.API.Account.Service.Domain.SyncDefaultAdvert.ISyncDefaultAdvert">
+            <summary>
+            同步預設廣告
+            </summary>
+        </member>
+        <member name="M:MWM.API.Account.Service.Domain.SyncDefaultAdvert.ISyncDefaultAdvert.SyncRecords(System.Int32)">
+            <summary>
+            同步預設廣告
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:MWM.API.Account.Service.Domain.SyncDefaultAdvert.SyncDefaultAdvert">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:MWM.API.Account.Service.Domain.SyncDefaultAdvert.SyncDefaultAdvert.#ctor(Phoenixnet.Extensions.Data.MySql.IDbFactory)">
+            <summary>
+            </summary>
+            <param name="dbFactory"></param>
+        </member>
+        <member name="M:MWM.API.Account.Service.Domain.SyncDefaultAdvert.SyncDefaultAdvert.SyncRecords(System.Int32)">
+            <summary>
+            同步預設廣告至流量主該表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:MWM.API.Account.Service.ModuleConfig.ApplicationConfig">
+            <summary>
+            主要服務模組
+            </summary>
+        </member>
+    </members>
+</doc>

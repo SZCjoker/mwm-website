@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Authors>Phoenixnet.Extensions.Data.MySql</Authors>
+        <Company>Phoenixnet.Extensions.Data.MySql</Company>
+        <Product>Phoenixnet.Extensions.Data.MySql</Product>
+        <PackageId>Phoenixnet.Extensions.Data.MySql</PackageId>
+        <Version>1.0.3</Version>
+        <RootNamespace>Phoenixnet.Extensions.Data.MySql</RootNamespace>
+      <LangVersion>latest</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Dapper" Version="2.0.4" />
+        <PackageReference Include="MySqlConnector" Version="0.59.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Phoenixnet.Extensions\Phoenixnet.Extensions.csproj" />
+    </ItemGroup>
+
+</Project>

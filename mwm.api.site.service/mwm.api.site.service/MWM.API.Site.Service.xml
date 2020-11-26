@@ -1,0 +1,1100 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MWM.API.Site.Service</name>
+    </assembly>
+    <members>
+        <member name="P:MWM.API.Site.Service.Application.AccountHistory.QueryRequest.login_name">
+             <summary>
+            帳號 
+             </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Application.AccountHistory.QueryRequest.category">
+            <summary>
+            主功能選項
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Application.AccountHistory.QueryRequest.action">
+            <summary>
+            子項目-行為
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Application.AccountHistory.QueryRequest.begin_date">
+            <summary>
+            起始時間
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Application.AccountHistory.QueryRequest.end_date">
+            <summary>
+            結束時間
+            </summary>
+        </member>
+        <member name="T:MWM.API.Site.Service.Application.AdvertReport.AdvertReportService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MWM.API.Site.Service.Application.AdvertReport.AdvertReportService.#ctor(MWM.API.Site.Service.Domain.AdvertReport.IAdvertReportRepository)">
+            <summary>
+            
+            </summary>
+            <param name="advertReportRepository"></param>
+        </member>
+        <member name="M:MWM.API.Site.Service.Application.AdvertReport.AdvertReportService.Get_List_Record(System.String,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="login_name"></param>
+            <param name="start_date"></param>
+            <param name="end_date"></param>
+            <param name="index"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Application.AdvertReport.AdvertReportService.Get_Detail_Record(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="account_id"></param>
+            <param name="start_date"></param>
+            <param name="end_date"></param>
+            <param name="index"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MWM.API.Site.Service.Application.AdvertReport.Contract.AdvertDetailResponse">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Application.AdvertReport.Contract.AdvertDetailResponse.account_id">
+            <summary>
+            商戶id
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Application.AdvertReport.Contract.AdvertDetailResponse.referer">
+            <summary>
+            網域名稱
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Application.AdvertReport.Contract.AdvertDetailResponse.pc_clicks">
+            <summary>
+            pc點擊數
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Application.AdvertReport.Contract.AdvertDetailResponse.pc_views">
+            <summary>
+            pc觀看數
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Application.AdvertReport.Contract.AdvertDetailResponse.mobile_views">
+            <summary>
+            行動裝置觀看數
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Application.AdvertReport.Contract.AdvertDetailResponse.mobile_clicks">
+            <summary>
+            行動裝置點擊數
+            </summary>
+        </member>
+        <member name="T:MWM.API.Site.Service.Application.AdvertReport.Contract.AdvertListResponse">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Application.AdvertReport.Contract.AdvertListResponse.account_id">
+            <summary>
+            商戶id
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Application.AdvertReport.Contract.AdvertListResponse.login_name">
+            <summary>
+            商戶名稱
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Application.AdvertReport.Contract.AdvertListResponse.pc_clicks">
+            <summary>
+            pc點擊數
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Application.AdvertReport.Contract.AdvertListResponse.pc_views">
+            <summary>
+            pc觀看數
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Application.AdvertReport.Contract.AdvertListResponse.mobile_views">
+            <summary>
+            行動裝置觀看數
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Application.AdvertReport.Contract.AdvertListResponse.mobile_clicks">
+            <summary>
+            行動裝置點擊數
+            </summary>
+        </member>
+        <member name="T:MWM.API.Site.Service.Application.AdvertReport.IAdvertReportService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MWM.API.Site.Service.Application.AdvertReport.IAdvertReportService.Get_List_Record(System.String,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            廣告數據報表
+            </summary>
+            <param name="login_name"></param>
+            <param name="start_date"></param>
+            <param name="end_date"></param>
+            <param name="index"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Application.AdvertReport.IAdvertReportService.Get_Detail_Record(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            廣告數據詳細報表
+            </summary>
+            <param name="account_id"></param>
+            <param name="start_date"></param>
+            <param name="end_date"></param>
+            <param name="index"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Application.PagingLimitOffset.GetOffset(System.Int32,System.Int32)">
+            <summary>
+            select * from table limit numberperpage offset (pagenumber-1)*numberperpage
+            </summary>
+            <param name="pageIndex"></param>
+            <param name="pageRows"></param>
+            <returns></returns>
+        </member>
+        <member name="P:MWM.API.Site.Service.Application.Domain.DispatchRequest.account_id">
+            <summary>
+            流量主ID-必要
+            </summary>
+        </member>
+        <member name="M:MWM.API.Site.Service.Application.Domain.DomainService.GetDispatchDomainID(System.Int64)">
+            <summary>
+            創建website_domain時使用
+            </summary>
+            <param name="accountid"></param>
+            <returns></returns>
+        </member>
+        <member name="P:MWM.API.Site.Service.Application.Domain.VideoDomainRequest.id">
+             <summary>
+            影片網域資料ID 
+             </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Application.Domain.VideoDomainRequest.domain_name">
+            <summary>
+            撥放影片域名
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Application.Domain.VideoDomainRequest.state">
+            <summary>
+            域名可用狀態
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Application.Domain.WebSiteDomainRequest.id">
+             <summary>
+            網站網域資料ID 
+             </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Application.Domain.WebSiteDomainRequest.account_id">
+            <summary>
+            流量主ID
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Application.Domain.WebSiteDomainRequest.dispatch_domain_id">
+            <summary>
+            系統分派網域ID
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Application.Domain.WebSiteDomainRequest.template_id">
+            <summary>
+            模板ID
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Application.Domain.WebSiteDomainRequest.public_domain">
+            <summary>
+            流量主公開的網域名稱
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Application.Domain.WebSiteDomainRequest.website_name">
+            <summary>
+            網站名稱
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Application.Domain.WebSiteDomainRequest.website_desc">
+            <summary>
+            網站描述
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Application.Domain.WebSiteDomainRequest.keyword">
+            <summary>
+            關鍵字
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Application.Domain.WebSiteDomainRequest.state">
+            <summary>
+            可用狀態
+            </summary>
+        </member>
+        <member name="T:MWM.API.Site.Service.Application.ReferReport.Contract.ReferReportAllResponse">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Application.ReferReport.Contract.ReferReportAllResponse.account_id">
+            <summary>
+            流量主id
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Application.ReferReport.Contract.ReferReportAllResponse.login_name">
+            <summary>
+            流量主登入名稱
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Application.ReferReport.Contract.ReferReportAllResponse.flow">
+            <summary>
+            流量
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Application.ReferReport.Contract.ReferReportAllResponse.visit_data">
+            <summary>
+            觀看次數
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Application.ReferReport.Contract.ReferReportAllResponse.domain_cnt">
+            <summary>
+            擁有網域數
+            </summary>
+        </member>
+        <member name="T:MWM.API.Site.Service.Application.ReferReport.Contract.ReferReportSiteMasterDetailResponse">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Application.ReferReport.Contract.ReferReportSiteMasterDetailResponse.account_id">
+            <summary>
+            流量主id
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Application.ReferReport.Contract.ReferReportSiteMasterDetailResponse.login_name">
+            <summary>
+            流量主登入名稱
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Application.ReferReport.Contract.ReferReportSiteMasterDetailResponse.date">
+            <summary>
+            日期
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Application.ReferReport.Contract.ReferReportSiteMasterDetailResponse.refer_url">
+            <summary>
+            
+            </summary>
+            <summary>
+            網站名稱
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Application.ReferReport.Contract.ReferReportSiteMasterDetailResponse.flow">
+            <summary>
+            流量
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Application.ReferReport.Contract.ReferReportSiteMasterDetailResponse.visit_data">
+            <summary>
+            觀看次數
+            </summary>
+        </member>
+        <member name="T:MWM.API.Site.Service.Application.ReferReport.Contract.ReferReportSiteMasterResponse">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Application.ReferReport.Contract.ReferReportSiteMasterResponse.account_id">
+            <summary>
+            流量主id
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Application.ReferReport.Contract.ReferReportSiteMasterResponse.login_name">
+            <summary>
+            流量主登入名稱
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Application.ReferReport.Contract.ReferReportSiteMasterResponse.flow">
+            <summary>
+            流量
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Application.ReferReport.Contract.ReferReportSiteMasterResponse.visit_data">
+            <summary>
+            觀看次數
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Application.ReferReport.Contract.ReferReportSiteMasterResponse.date">
+            <summary>
+            日期
+            </summary>
+        </member>
+        <member name="T:MWM.API.Site.Service.Application.ReferReport.IReferReportService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MWM.API.Site.Service.Application.ReferReport.IReferReportService.Get_ReferReportAll_Record(System.String,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            流量數據(顯示所有流量主)
+            </summary>
+            <param name="login_name"></param>
+            <param name="start_date"></param>
+            <param name="end_date"></param>
+            <param name="index"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Application.ReferReport.IReferReportService.Get_ReferReportSiteMaster_Record(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="account_id"></param>
+            <param name="start_date"></param>
+            <param name="end_date"></param>
+            <param name="index"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Application.ReferReport.IReferReportService.Get_ReferReportSiteMasterDetail_Record(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="account_id"></param>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MWM.API.Site.Service.Application.ReferReport.ReferReportService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MWM.API.Site.Service.Application.ReferReport.ReferReportService.#ctor(MWM.API.Site.Service.Domain.ReferReport.IReferReportRepository)">
+            <summary>
+            
+            </summary>
+            <param name="referReportRepository"></param>
+        </member>
+        <member name="M:MWM.API.Site.Service.Application.ReferReport.ReferReportService.Get_ReferReportAll_Record(System.String,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="login_name"></param>
+            <param name="start_date"></param>
+            <param name="end_date"></param>
+            <param name="index"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Application.ReferReport.ReferReportService.Get_ReferReportSiteMaster_Record(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="account_id"></param>
+            <param name="start_date"></param>
+            <param name="end_date"></param>
+            <param name="index"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Application.ReferReport.ReferReportService.Get_ReferReportSiteMasterDetail_Record(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="account_id"></param>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="P:MWM.API.Site.Service.Application.Site.Datatype.WebDetailRequest.id">
+             <summary>
+            站點管理資料ID 
+             </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Application.Site.Datatype.WebDetailRequest.publish_msg_top">
+             <summary>
+            公告訊息-上 
+             </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Application.Site.Datatype.WebDetailRequest.publish_msg_bottom">
+            <summary>
+            公告訊息-下
+            </summary>
+        </member>
+        <member name="M:MWM.API.Site.Service.Controllers.AccountHistoryController.GetAccountHistoryByCondition(MWM.API.Site.Service.Application.AccountHistory.QueryRequest)">
+            <summary>
+            取得使用者行為紀錄ByCondition
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Controllers.AccountHistoryController.GetAccountHistory">
+            <summary>
+            取得所有使用者行為紀錄
+            </summary>
+            <param ></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Controllers.AccountHistoryController.Record(MWM.API.Site.Service.Application.AccountHistory.HistoryRequest)">
+            <summary>
+            行為紀錄
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MWM.API.Site.Service.Controllers.AdvertReportController">
+            <summary>
+            廣告點擊報表
+            </summary>
+        </member>
+        <member name="M:MWM.API.Site.Service.Controllers.AdvertReportController.#ctor(MWM.API.Site.Service.Application.AdvertReport.IAdvertReportService)">
+            <summary>
+            
+            </summary>
+            <param name="advertReportService"></param>
+        </member>
+        <member name="M:MWM.API.Site.Service.Controllers.AdvertReportController.GetList(System.Int32,System.Int32,System.String,System.Int32,System.Int32)">
+            <summary>
+            廣告點擊-數據列表
+            </summary>
+            <param name="start_date"></param>
+            <param name="end_date"></param>
+            <param name="index"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Controllers.AdvertReportController.GetDetail(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+             廣告點擊-數據詳細頁
+            </summary>
+            <param name="account_id"></param>
+            <param name="start_date"></param>
+            <param name="end_date"></param>
+            <param name="index"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Controllers.CodeController.GetALL(System.Int32,System.Int32)">
+            <summary>
+            取得所有用戶流量代碼設定
+            </summary>
+            <param name="page"></param>
+            <param name="rows"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Controllers.CodeController.GetTemplateCdoeByAccount(System.Int64)">
+            <summary>
+            MWM模板取得流量code
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Controllers.CodeController.GetCodeByAccount">
+            <summary>
+            流量主-依用戶取得流量代碼設定-token
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Controllers.CodeController.GetCompanyCode(System.Int64)">
+            <summary>
+            取得公版流量代碼
+            </summary>
+            <param name="mananger_id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Controllers.CodeController.CreateCode(MWM.API.Site.Service.Application.Code.Contract.CreateUpdateCodeRequest)">
+            <summary>
+            新增流量代碼
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Controllers.CodeController.UpdateCode(MWM.API.Site.Service.Application.Code.Contract.CreateUpdateCodeRequest)">
+            <summary>
+            依帳戶更新流量代碼
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Controllers.CodeController.DeleteCode">
+            <summary>
+            依帳戶刪除流量代碼
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Controllers.DefaultController.Get">
+            <summary>
+            heartbeat
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Controllers.DomainController.CreateDomain(MWM.API.Site.Service.Application.Domain.VideoDomainRequest)">
+            <summary>
+            建立影片瀏覽域名
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Controllers.DomainController.GetAllDomain">
+            <summary>
+             取得所有影片瀏覽域名
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Controllers.DomainController.DeteleDomainByID(System.Int32)">
+            <summary>
+            刪除影片瀏覽域名
+            </summary>
+            <param name="id">1044750336</param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Controllers.DomainController.UpdateDomainInfo(System.Collections.Generic.List{MWM.API.Site.Service.Application.Domain.VideoDomainRequest})">
+            <summary>
+            編輯影片瀏覽域名
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Controllers.DomainController.GetAllWebSiteDomain(System.Int32,System.Int32)">
+            <summary>
+            取得所有網站域名資料
+            </summary>
+            <param name="page"></param>
+            <param name="rows"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Controllers.DomainController.GetWebSiteDomainByID(System.Int32,System.Int32)">
+            <summary>
+            取得帳號所屬的網域
+            </summary>
+            <param name="page"></param>
+            <param name="rows"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Controllers.DomainController.CreteWebSiteDomain(MWM.API.Site.Service.Application.Domain.WebSiteDomainRequest)">
+            <summary>
+            建立新的網站域名
+            </summary>
+            <param name="request"></param>
+            <returns></returns>        
+        </member>
+        <member name="M:MWM.API.Site.Service.Controllers.DomainController.DeteleWebSiteDomainByID(System.Int64)">
+            <summary>
+            刪除(停權)網站域名
+            </summary>
+            <param name="domain_id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Controllers.DomainController.UpdateWebSiteDomain(MWM.API.Site.Service.Application.Domain.WebSiteDomainRequest)">
+            <summary>
+            變更網站域名資訊
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Controllers.DomainController.GetWebdomainSettingByAccount(System.Int64)">
+            <summary>
+            MWM模板獲取流量主網站設定LIST
+            </summary>
+            <param name="account_id">流量主ID</param>
+            <param name="page"></param>
+            <param name="rows"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Controllers.DomainController.GetDispatchDomain(System.Int32,System.Int32)">
+            <summary>
+            取得所有系統分配給流量主的網站域名
+            </summary>
+            <param name="page"></param>
+            <param name="rows"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Controllers.DomainController.GetDispatchDomainNameByAccount">
+            <summary>
+            取得系統分配域名By流量主Id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Controllers.DomainController.CreateDispatchData(MWM.API.Site.Service.Application.Domain.DispatchRequest)">
+            <summary>
+            建立系統配置三級域名
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Controllers.LinkController.GetAll">
+            <summary>
+            取得該帳號所有友情連結設定
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Controllers.LinkController.GetLinkById(System.Int64)">
+            <summary>
+            依ID取得友情連結
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Controllers.LinkController.CreateLink(MWM.API.Site.Service.Application.Link.CreateUpdateLinkRequest)">
+            <summary>
+            新增友情連結
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Controllers.LinkController.UpdateLink(MWM.API.Site.Service.Application.Link.CreateUpdateLinkRequest)">
+            <summary>
+            更新友情連結
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Controllers.LinkController.DeleteLink(System.Int64)">
+            <summary>
+            依ID刪除友情連結
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MWM.API.Site.Service.Controllers.ReferReportController">
+            <summary>
+                流量數據
+            </summary>
+        </member>
+        <member name="M:MWM.API.Site.Service.Controllers.ReferReportController.#ctor(MWM.API.Site.Service.Application.ReferReport.IReferReportService)">
+            <summary>
+            </summary>
+            <param name="referReportService"></param>
+        </member>
+        <member name="M:MWM.API.Site.Service.Controllers.ReferReportController.GetReferAll(System.Int32,System.Int32,System.String,System.Int32,System.Int32)">
+            <summary>
+                流量數據(顯示所有流量主)
+            </summary>
+            <param name="start_date">起始日期：20200210</param>
+            <param name="end_date">結束日期：20200212</param>
+            <param name="login_name">商戶名稱Login_name</param>
+            <param name="index"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Controllers.ReferReportController.GetReferSiteMaster(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            流量數據(顯示單一流量主)
+            </summary>
+            <param name="start_date">起始日期：20200210</param>
+            <param name="end_date">結束日期：20200212</param>
+            <param name="account_id">商戶id</param>
+            <param name="index"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Controllers.ReferReportController.GetReferSiteMasterDetail(System.Int32,System.Int32)">
+            <summary>
+            流量數據(顯示單一流量主底下所有網域數據)
+            </summary>
+            <param name="account_id">商戶id</param>
+            <param name="date">日期：20200210</param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Controllers.SiteController.CreateSite(MWM.API.Site.Service.Application.Site.Datatype.WebDetailRequest)">
+            <summary>
+            建立新的全站設定
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Controllers.SiteController.GetAllSite(System.Int32,System.Int32)">
+            <summary>
+            取得所有站點設定
+            </summary>
+            <param name="page"></param>
+            <param name="rows"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Controllers.SiteController.GetCompanySiteData(System.Int64)">
+            <summary>
+            取得公司站點設定
+            </summary>
+            <param name="manager_id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Controllers.SiteController.GetSiteByID">
+            <summary>
+            取得全站設定by流量主ID
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Controllers.SiteController.DeleteSiteByID">
+            <summary>
+            刪除全站設定By流量主Id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Controllers.SiteController.UpdateSiteInfo(MWM.API.Site.Service.Application.Site.Datatype.WebDetailRequest)">
+            <summary>
+            更新全站設定
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Controllers.TemplateController.CreateTemplate(MWM.API.Site.Service.Application.Template.TemplateRequest)">
+            <summary>
+            新增網站模板
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Controllers.TemplateController.GetAllTemplate">
+            <summary>
+            取得所有網站模板
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Controllers.TemplateController.GetTemplateByID(System.Int32)">
+            <summary>
+            取得網站模板By網站Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Controllers.TemplateController.DeteleTemplateByID(System.Int32)">
+            <summary>
+            刪除網站模板ById
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Controllers.TemplateController.UpdateTemplate(MWM.API.Site.Service.Application.Template.TemplateRequest)">
+            <summary>
+            更新維護網站模板
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="P:MWM.API.Site.Service.Domain.AccountHistory.QueryAllEntity.LoginName">
+             <summary>
+            帳號 
+             </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Domain.AccountHistory.QueryAllEntity.Category">
+            <summary>
+            主功能選項
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Domain.AccountHistory.QueryAllEntity.Action">
+            <summary>
+            子項目-行為
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Domain.AccountHistory.QueryAllEntity.BeginDate">
+            <summary>
+            起始時間
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Domain.AccountHistory.QueryAllEntity.EndDate">
+            <summary>
+            結束時間
+            </summary>
+        </member>
+        <member name="T:MWM.API.Site.Service.Domain.AdvertReport.AdvertReportListEntity">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Domain.AdvertReport.AdvertReportListEntity.account_id">
+            <summary>
+            商戶id
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Domain.AdvertReport.AdvertReportListEntity.login_name">
+            <summary>
+            商戶名稱
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Domain.AdvertReport.AdvertReportListEntity.pc_clicks">
+            <summary>
+            pc點擊數
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Domain.AdvertReport.AdvertReportListEntity.pc_views">
+            <summary>
+            pc觀看數
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Domain.AdvertReport.AdvertReportListEntity.mobile_views">
+            <summary>
+            行動裝置觀看數
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Domain.AdvertReport.AdvertReportListEntity.mobile_clicks">
+            <summary>
+            行動裝置點擊數
+            </summary>
+        </member>
+        <member name="T:MWM.API.Site.Service.Domain.AdvertReport.AdvertReportDetailEntity">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Domain.AdvertReport.AdvertReportDetailEntity.account_id">
+            <summary>
+            商戶id
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Domain.AdvertReport.AdvertReportDetailEntity.referer">
+            <summary>
+            網域名稱
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Domain.AdvertReport.AdvertReportDetailEntity.pc_clicks">
+            <summary>
+            pc點擊數
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Domain.AdvertReport.AdvertReportDetailEntity.pc_views">
+            <summary>
+            pc觀看數
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Domain.AdvertReport.AdvertReportDetailEntity.mobile_views">
+            <summary>
+            行動裝置觀看數
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Domain.AdvertReport.AdvertReportDetailEntity.mobile_clicks">
+            <summary>
+            行動裝置點擊數
+            </summary>
+        </member>
+        <member name="T:MWM.API.Site.Service.Domain.AdvertReport.AdvertReportRepository">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MWM.API.Site.Service.Domain.AdvertReport.AdvertReportRepository.#ctor(Phoenixnet.Extensions.Data.MySql.IDbFactory)">
+            <summary>
+            
+            </summary>
+            <param name="dbFactory"></param>
+        </member>
+        <member name="M:MWM.API.Site.Service.Domain.AdvertReport.AdvertReportRepository.GetListReport(System.String,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="query_str"></param>
+            <param name="start_date"></param>
+            <param name="end_date"></param>
+            <param name="index"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MWM.API.Site.Service.Domain.AdvertReport.IAdvertReportRepository">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MWM.API.Site.Service.Domain.AdvertReport.IAdvertReportRepository.GetListReport(System.String,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="query_str"></param>
+            <param name="start_date"></param>
+            <param name="end_date"></param>
+            <param name="index"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Domain.AdvertReport.IAdvertReportRepository.GetDetailReport(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="account_id"></param>
+            <param name="start_date"></param>
+            <param name="end_date"></param>
+            <param name="index"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MWM.API.Site.Service.Domain.ReferReport.IReferReportRepository">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MWM.API.Site.Service.Domain.ReferReport.IReferReportRepository.GetAllReferReport(System.String,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            流量數據(顯示所有流量主)
+            </summary>
+            <param name="query_str"></param>
+            <param name="start_date"></param>
+            <param name="end_date"></param>
+            <param name="index"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Domain.ReferReport.IReferReportRepository.GetSiteMasterReferReport(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            流量數據(顯示單一流量主)
+            </summary>
+            <param name="account_id"></param>
+            <param name="start_date"></param>
+            <param name="end_date"></param>
+            <param name="index"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Domain.ReferReport.IReferReportRepository.GetSiteMasterDetailReferReport(System.Int32,System.Int32)">
+            <summary>
+            流量數據(顯示單一流量主底下所有網域數據)
+            </summary>
+            <param name="account_id"></param>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MWM.API.Site.Service.Domain.ReferReport.ReferReportAllEntity">
+            <summary>
+            流量數據(顯示所有流量主)
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Domain.ReferReport.ReferReportAllEntity.account_id">
+            <summary>
+            流量主id
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Domain.ReferReport.ReferReportAllEntity.login_name">
+            <summary>
+            流量主登入名稱
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Domain.ReferReport.ReferReportAllEntity.flow">
+            <summary>
+            流量
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Domain.ReferReport.ReferReportAllEntity.visit_data">
+            <summary>
+            觀看次數
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Domain.ReferReport.ReferReportAllEntity.domain_cnt">
+            <summary>
+            擁有網域數
+            </summary>
+        </member>
+        <member name="T:MWM.API.Site.Service.Domain.ReferReport.ReferReportSiteMasterEntity">
+            <summary>
+            流量數據(顯示單一流量主)
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Domain.ReferReport.ReferReportSiteMasterEntity.account_id">
+            <summary>
+            流量主id
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Domain.ReferReport.ReferReportSiteMasterEntity.login_name">
+            <summary>
+            流量主登入名稱
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Domain.ReferReport.ReferReportSiteMasterEntity.flow">
+            <summary>
+            流量
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Domain.ReferReport.ReferReportSiteMasterEntity.visit_data">
+            <summary>
+            觀看次數
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Domain.ReferReport.ReferReportSiteMasterEntity.date">
+            <summary>
+            日期
+            </summary>
+        </member>
+        <member name="T:MWM.API.Site.Service.Domain.ReferReport.ReferReportSiteMasterDetailEntity">
+            <summary>
+            流量數據(顯示單一流量主底下所有網域數據)
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Domain.ReferReport.ReferReportSiteMasterDetailEntity.account_id">
+            <summary>
+            流量主id
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Domain.ReferReport.ReferReportSiteMasterDetailEntity.refer_url">
+            <summary>
+            網站名稱
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Domain.ReferReport.ReferReportSiteMasterDetailEntity.login_name">
+            <summary>
+            流量主登入名稱
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Domain.ReferReport.ReferReportSiteMasterDetailEntity.flow">
+            <summary>
+            流量
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Domain.ReferReport.ReferReportSiteMasterDetailEntity.visit_data">
+            <summary>
+            觀看次數
+            </summary>
+        </member>
+        <member name="P:MWM.API.Site.Service.Domain.ReferReport.ReferReportSiteMasterDetailEntity.date">
+            <summary>
+            日期
+            </summary>
+        </member>
+        <member name="T:MWM.API.Site.Service.Domain.ReferReport.ReferReportRepository">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MWM.API.Site.Service.Domain.ReferReport.ReferReportRepository.#ctor(Phoenixnet.Extensions.Data.MySql.IDbFactory)">
+            <summary>
+            
+            </summary>
+            <param name="dbFactory"></param>
+        </member>
+        <member name="M:MWM.API.Site.Service.Domain.ReferReport.ReferReportRepository.GetAllReferReport(System.String,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="query_str"></param>
+            <param name="start_date"></param>
+            <param name="end_date"></param>
+            <param name="index"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Domain.ReferReport.ReferReportRepository.GetSiteMasterReferReport(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            流量數據(顯示單一流量主)
+            </summary>
+            <param name="account_id"></param>
+            <param name="start_date"></param>
+            <param name="end_date"></param>
+            <param name="index"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Site.Service.Domain.ReferReport.ReferReportRepository.GetSiteMasterDetailReferReport(System.Int32,System.Int32)">
+            <summary>
+            流量數據(顯示單一流量主底下所有網域數據)
+            </summary>
+            <param name="account_id"></param>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MWM.API.Site.Service.ModuleConfig.ApplicationConfig">
+            <summary>
+            主要服務模組
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<nlog xmlns="http://www.nlog-project.org/schemas/NLog.xsd"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      autoReload="true"
+      throwExceptions="true"
+      internalLogLevel="Info"
+      internalLogFile="c:\temp\internal-nlog.txt">
+
+  <targets>
+    <!--
+      AsyncWrapper
+      https://github.com/nlog/NLog/wiki/AsyncWrapper-target
+      -->
+    <target xsi:type="AsyncWrapper"
+            name="file_async"
+            queueLimit="10000"
+            timeToSleepBetweenBatches="1"
+            batchSize="200"
+            overflowAction="Discard">
+
+      <target xsi:type="File"
+              name="file"
+              encoding="utf-8"
+              keepFileOpen = "true"
+              concurrentWrites = "false"
+              autoFlush = "false"
+              openFileFlushTimeout = "1"
+              
+              fileName="${basedir}/logs/${date:format=yyyyMMdd}/${logger}.txt"
+              layout="${longdate}|${level}|${message}|${exception:format=tostring}" />
+    </target>
+  </targets>
+</nlog>

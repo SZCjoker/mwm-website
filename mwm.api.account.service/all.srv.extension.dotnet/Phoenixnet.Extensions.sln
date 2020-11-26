@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Phoenixnet.Extensions", "Phoenixnet.Extensions\Phoenixnet.Extensions.csproj", "{AAD57816-7700-4E23-9B3C-00A313E29FA6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Phoenixnet.Extensions.Caching.CsRedis", "Phoenixnet.Extensions.Caching.CsRedis\Phoenixnet.Extensions.Caching.CsRedis.csproj", "{DB6A964C-6CAA-432A-A9CC-FB1FBEE0C0E7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Phoenixnet.Extensions.Cryptography", "Phoenixnet.Extensions.Cryptography\Phoenixnet.Extensions.Cryptography.csproj", "{43C11C99-AE53-4E3B-BDB4-CF7F857790E1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Phoenixnet.Extensions.Data.Mongo", "Phoenixnet.Extensions.Data.Mongo\Phoenixnet.Extensions.Data.Mongo.csproj", "{E12614C7-10DB-4D9B-A1B6-289CD8B2602B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Phoenixnet.Extensions.Data.MySql", "Phoenixnet.Extensions.Data.Mysql\Phoenixnet.Extensions.Data.MySql.csproj", "{DBCF678E-0CAF-4196-90D7-AAA030725379}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Phoenixnet.Extensions.Data.Rabbit", "Phoenixnet.Extensions.Data.Rabbit\Phoenixnet.Extensions.Data.Rabbit.csproj", "{E5C44E7B-A9F2-4DEC-87B7-75D6530A8133}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Phoenixnet.Extensions.Serializer", "Phoenixnet.Extensions.Serializer\Phoenixnet.Extensions.Serializer.csproj", "{BC8D2307-F2D8-4F1F-ABF6-DFFDADF1BB1E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Phoenixnet.Extensions.Web", "Phoenixnet.Extensions.Web\Phoenixnet.Extensions.Web.csproj", "{9FEB432B-A97B-4DC1-867C-E80E5BF9277C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phoenixnet.Extensions.IPLocation", "Phoenixnet.Extensions.IPLocation\Phoenixnet.Extensions.IPLocation.csproj", "{CC0B7913-B803-4E5B-9E3B-964A487AEA1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phoenixnet.Extensions.Authentication.JWT", "Phoenixnet.Extensions.Authentication.JWT\Phoenixnet.Extensions.Authentication.JWT.csproj", "{0998D845-0A5C-407F-A23A-C73C5E0E368F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AAD57816-7700-4E23-9B3C-00A313E29FA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAD57816-7700-4E23-9B3C-00A313E29FA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAD57816-7700-4E23-9B3C-00A313E29FA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAD57816-7700-4E23-9B3C-00A313E29FA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB6A964C-6CAA-432A-A9CC-FB1FBEE0C0E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB6A964C-6CAA-432A-A9CC-FB1FBEE0C0E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB6A964C-6CAA-432A-A9CC-FB1FBEE0C0E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB6A964C-6CAA-432A-A9CC-FB1FBEE0C0E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43C11C99-AE53-4E3B-BDB4-CF7F857790E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43C11C99-AE53-4E3B-BDB4-CF7F857790E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43C11C99-AE53-4E3B-BDB4-CF7F857790E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43C11C99-AE53-4E3B-BDB4-CF7F857790E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E12614C7-10DB-4D9B-A1B6-289CD8B2602B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E12614C7-10DB-4D9B-A1B6-289CD8B2602B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E12614C7-10DB-4D9B-A1B6-289CD8B2602B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E12614C7-10DB-4D9B-A1B6-289CD8B2602B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBCF678E-0CAF-4196-90D7-AAA030725379}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBCF678E-0CAF-4196-90D7-AAA030725379}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBCF678E-0CAF-4196-90D7-AAA030725379}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBCF678E-0CAF-4196-90D7-AAA030725379}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5C44E7B-A9F2-4DEC-87B7-75D6530A8133}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5C44E7B-A9F2-4DEC-87B7-75D6530A8133}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5C44E7B-A9F2-4DEC-87B7-75D6530A8133}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5C44E7B-A9F2-4DEC-87B7-75D6530A8133}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC8D2307-F2D8-4F1F-ABF6-DFFDADF1BB1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC8D2307-F2D8-4F1F-ABF6-DFFDADF1BB1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC8D2307-F2D8-4F1F-ABF6-DFFDADF1BB1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC8D2307-F2D8-4F1F-ABF6-DFFDADF1BB1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FEB432B-A97B-4DC1-867C-E80E5BF9277C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FEB432B-A97B-4DC1-867C-E80E5BF9277C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FEB432B-A97B-4DC1-867C-E80E5BF9277C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FEB432B-A97B-4DC1-867C-E80E5BF9277C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC0B7913-B803-4E5B-9E3B-964A487AEA1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC0B7913-B803-4E5B-9E3B-964A487AEA1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC0B7913-B803-4E5B-9E3B-964A487AEA1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC0B7913-B803-4E5B-9E3B-964A487AEA1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0998D845-0A5C-407F-A23A-C73C5E0E368F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0998D845-0A5C-407F-A23A-C73C5E0E368F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0998D845-0A5C-407F-A23A-C73C5E0E368F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0998D845-0A5C-407F-A23A-C73C5E0E368F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {50A3FF32-36EF-46DC-8DC6-7520C62AD766}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,75 @@
+stages:
+  - build_prod
+  - build_uat
+  - deploy_uat  
+  - deploy_prod
+variables:
+  server_uat_ip: 35.229.232.59 #UAT
+  server_prod_ip: 35.229.232.59 #production
+  git_name: mwm.api.site.service
+  folder_name: mwm.api.site.service
+  project_name: MWM.API.Site.Service
+  GIT_SUBMODULE_STRATEGY: recursive 
+  target_path: "/home/release_code/"
+
+
+##prod build ##
+
+build_uat:
+  stage: build_uat
+  script:
+    - cd /home/release_code
+    - rm -rf $git_name
+    - git clone -b uat http://root:27211085@202.153.164.245/root/$git_name.git
+    - cd $git_name
+    - git submodule update --init --recursive    
+    - cd $folder_name
+    - dotnet build $project_name.csproj
+    - dotnet publish -c Release
+    - cd bin/Release/netcoreapp2.2/publish
+    - rm -f appsettings.json
+    - mv appsettings.uat.json appsettings.json
+  only:
+    - uat
+
+deploy_uat:
+  stage: deploy_uat
+  script:
+    - echo "deploy_uat.."
+    - scp  /home/release_code/$git_name/$folder_name/bin/Release/netcoreapp2.2/publish/* root@$server_uat_ip:/opt/www/
+    - "ssh -T root@$server_uat_ip 'sudo  systemctl  stop mwm.service'"    
+    - "ssh -T root@$server_uat_ip 'sudo  systemctl  start mwm.service'"
+
+  when: manual
+  only:
+    - uat
+  dependencies:
+    - build_uat
+
+build_prod:
+  stage: build_prod
+  script:
+    - cd /home/release_code
+    - rm -rf $git_name
+    - git clone -b prod http://root:27211085@202.153.164.245/root/$git_name.git
+    - cd $git_name
+    - git submodule update --init --recursive    
+    - cd $folder_name
+    - dotnet build $project_name.csproj
+    - dotnet publish -c Release
+  only:
+    - prod   
+    
+deploy_prod:
+  stage: deploy_prod
+  script:
+    - echo "deploy_prod.."
+    - scp  /home/release_code/$git_name/$folder_name/bin/Release/netcoreapp2.2/publish/* root@$server_prod_ip:/opt/www/
+    - "ssh -T root@$server_prod_ip 'sudo  systemctl  stop mwm.service'"    
+    - "ssh -T root@$server_prod_ip 'sudo  systemctl  start mwm.service'"
+
+  when: manual
+  only:
+    - prod
+  dependencies:
+    - build_prod

@@ -1,0 +1,6 @@
+[submodule "all.srv.extension.dotnet"]
+	path = all.srv.extension.dotnet
+	url = ../../root/all.srv.extension.dotnet.git
+[submodule "mwm.srv.extension.dotnet"]
+	path = mwm.srv.extension.dotnet
+	url = ../../root/mwm.srv.extension.dotnet.git

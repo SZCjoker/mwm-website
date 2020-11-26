@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28729.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D81C7EFD-6D68-4263-B1CF-CEC2FD677C63}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Phoenixnet.Extensions", "all.srv.extension.dotnet\Phoenixnet.Extensions\Phoenixnet.Extensions.csproj", "{FD4BE946-D676-4E71-B625-C3A55C70783B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Phoenixnet.Extensions.Web", "all.srv.extension.dotnet\Phoenixnet.Extensions.Web\Phoenixnet.Extensions.Web.csproj", "{7A54F84F-ABE0-479C-BF1C-71EA361011A6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Phoenixnet.Extensions.Data.MySql", "all.srv.extension.dotnet\Phoenixnet.Extensions.Data.Mysql\Phoenixnet.Extensions.Data.MySql.csproj", "{DAEC4AD0-7755-472F-9CB6-E0F52068D514}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Phoenixnet.Extensions.Caching.CsRedis", "all.srv.extension.dotnet\Phoenixnet.Extensions.Caching.CsRedis\Phoenixnet.Extensions.Caching.CsRedis.csproj", "{DFAB234C-73A0-43C5-B3CD-393C9B729117}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Phoenixnet.Extensions.Cryptography", "all.srv.extension.dotnet\Phoenixnet.Extensions.Cryptography\Phoenixnet.Extensions.Cryptography.csproj", "{35CBDBBA-33A4-4B84-A1B6-48701D68ADEC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Phoenixnet.Extensions.Serializer", "all.srv.extension.dotnet\Phoenixnet.Extensions.Serializer\Phoenixnet.Extensions.Serializer.csproj", "{48E18E23-C714-4CB7-91BF-3F6180B2B4AE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MWM.API.Advert.Service", "mwm.api.advert.service\MWM.API.Advert.Service.csproj", "{3E2FD741-6C85-42CB-B2D6-6342B47E0319}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MWM.Extensions", "mwm.srv.extension.dotnet\MWM.Extensions\MWM.Extensions.csproj", "{6EDCA1F8-3363-4140-BF4F-157405FE84AE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD4BE946-D676-4E71-B625-C3A55C70783B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD4BE946-D676-4E71-B625-C3A55C70783B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD4BE946-D676-4E71-B625-C3A55C70783B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD4BE946-D676-4E71-B625-C3A55C70783B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A54F84F-ABE0-479C-BF1C-71EA361011A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A54F84F-ABE0-479C-BF1C-71EA361011A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A54F84F-ABE0-479C-BF1C-71EA361011A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A54F84F-ABE0-479C-BF1C-71EA361011A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAEC4AD0-7755-472F-9CB6-E0F52068D514}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAEC4AD0-7755-472F-9CB6-E0F52068D514}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAEC4AD0-7755-472F-9CB6-E0F52068D514}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAEC4AD0-7755-472F-9CB6-E0F52068D514}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFAB234C-73A0-43C5-B3CD-393C9B729117}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFAB234C-73A0-43C5-B3CD-393C9B729117}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFAB234C-73A0-43C5-B3CD-393C9B729117}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFAB234C-73A0-43C5-B3CD-393C9B729117}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35CBDBBA-33A4-4B84-A1B6-48701D68ADEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35CBDBBA-33A4-4B84-A1B6-48701D68ADEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35CBDBBA-33A4-4B84-A1B6-48701D68ADEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35CBDBBA-33A4-4B84-A1B6-48701D68ADEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48E18E23-C714-4CB7-91BF-3F6180B2B4AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48E18E23-C714-4CB7-91BF-3F6180B2B4AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48E18E23-C714-4CB7-91BF-3F6180B2B4AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48E18E23-C714-4CB7-91BF-3F6180B2B4AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E2FD741-6C85-42CB-B2D6-6342B47E0319}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E2FD741-6C85-42CB-B2D6-6342B47E0319}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E2FD741-6C85-42CB-B2D6-6342B47E0319}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E2FD741-6C85-42CB-B2D6-6342B47E0319}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EDCA1F8-3363-4140-BF4F-157405FE84AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EDCA1F8-3363-4140-BF4F-157405FE84AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EDCA1F8-3363-4140-BF4F-157405FE84AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EDCA1F8-3363-4140-BF4F-157405FE84AE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C96D2D7-E2E6-4060-8A99-89A7CC2417FA}
+	EndGlobalSection
+EndGlobal

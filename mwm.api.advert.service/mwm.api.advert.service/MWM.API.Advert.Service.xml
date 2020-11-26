@@ -1,0 +1,2972 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MWM.API.Advert.Service</name>
+    </assembly>
+    <members>
+        <member name="T:MWM.API.Advert.Service.Application.AdvertConfig.AdvertConfigService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.AdvertConfig.AdvertConfigService.#ctor(MWM.API.Advert.Service.Domain.AdvertConfig.IAdvertConfigRepository)">
+            <summary>
+            
+            </summary>
+            <param name="advertConfigRepository"></param>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.AdvertConfig.AdvertConfigService.sponsor_isEnable">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Application.AdvertConfig.IAdvertConfigService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.AdvertConfig.IAdvertConfigService.sponsor_isEnable">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Application.AdvertTrafficMaster.AdvertTrafficMasterService">
+            <summary>
+            流量主後台-我的廣告
+            </summary>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.AdvertTrafficMaster.AdvertTrafficMasterService.#ctor(MWM.API.Advert.Service.Domain.AdvertTrafficMaster.IAdvertTrafficMasterRepository)">
+            <summary>
+            
+            </summary>
+            <param name="advertTrafficMasterRepository"></param>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.AdvertTrafficMaster.AdvertTrafficMasterService.Add_Top_Banner_Record(MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AddTopBannerRequest,System.Int32)">
+            <summary>
+            流量主後台-我的廣告-新增上方橫幅廣告
+            </summary>
+            <param name="request"></param>
+            <param name="account_id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.AdvertTrafficMaster.AdvertTrafficMasterService.Update_Top_Banner_Record(MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.UpdateTopBannerRequest,System.Int32)">
+            <summary>
+            流量主後台-我的廣告-更新上方橫幅廣告
+            </summary>
+            <param name="request"></param>
+            <param name="account_id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.AdvertTrafficMaster.AdvertTrafficMasterService.del_Top_Banner_Record(System.Int32,System.Int32)">
+            <summary>
+            流量主後台-我的廣告-刪除上方橫幅廣告
+            </summary>
+            <param name="id"></param>
+            <param name="account_id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.AdvertTrafficMaster.AdvertTrafficMasterService.Get_Top_Banner_Record(System.Int32,System.Int32,System.Int32)">
+            <summary>
+             流量主後台-我的廣告-取得上方橫幅廣告列表
+            </summary>
+            <param name="index"></param>
+            <param name="size"></param>
+            <param name="account_id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.AdvertTrafficMaster.AdvertTrafficMasterService.GetAdriftList(System.Int32)">
+            <summary>
+            流量主後台-我的廣告-取得漂浮廣告列表
+            </summary>
+            <param name="account_id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.AdvertTrafficMaster.AdvertTrafficMasterService.UpdateAdrift(MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AdriftRequest,System.Int32)">
+            <summary>
+            流量主後台-我的廣告-更新漂浮廣告
+            </summary>
+            <param name="request"></param>
+            <param name="account_id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.AdvertTrafficMaster.AdvertTrafficMasterService.GetAllSitePopUp(System.Int32)">
+            <summary>
+            流量主後台-我的廣告-取得全站彈跳視窗
+            </summary>
+            <param name="account_id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.AdvertTrafficMaster.AdvertTrafficMasterService.UpdateAllSitePopUp(MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AllSitePopUpdateRequest,System.Int32)">
+            <summary>
+            流量主後台-我的廣告- 更新全站彈跳視窗
+            </summary>
+            <param name="request"></param>
+            <param name="account_id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.AdvertTrafficMaster.AdvertTrafficMasterService.GetVideoPopUp(System.Int32)">
+            <summary>
+            流量主後台-我的廣告-取得片頭彈窗廣告
+            </summary>
+            <param name="account_id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.AdvertTrafficMaster.AdvertTrafficMasterService.UpdateVideoPopUp(MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.VideoPopUpUpdateRequest,System.Int32)">
+            <summary>
+            流量主後台-我的廣告-更新片頭彈窗廣告
+            </summary>
+            <param name="request"></param>
+            <param name="account_id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.AdvertTrafficMaster.AdvertTrafficMasterService.Add_Video_Banner_Record(MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AddVideoBannerRequest,System.Int32)">
+            <summary>
+            流量主後台-我的廣告-新增影片banner
+            </summary>
+            <param name="request"></param>
+            <param name="account_id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.AdvertTrafficMaster.AdvertTrafficMasterService.Update_Video_Banner_Record(MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.UpdateVideoBannerRequest,System.Int32)">
+            <summary>
+            流量主後台-我的廣告-更新影片banner
+            </summary>
+            <param name="request"></param>
+            <param name="account_id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.AdvertTrafficMaster.AdvertTrafficMasterService.del_Video_Banner_Record(System.Int32,System.Int32)">
+            <summary>
+            流量主後台-我的廣告-刪除影片banner
+            </summary>
+            <param name="id"></param>
+            <param name="account_id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.AdvertTrafficMaster.AdvertTrafficMasterService.Get_Video_Banner_Record(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            流量主後台-我的廣告-取得影片banner列表
+            </summary>
+            <param name="index"></param>
+            <param name="size"></param>
+            <param name="account_id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AdriftResponse">
+            <summary>
+            漂浮廣告輸出
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AdriftResponse.id">
+            <summary>
+                唯一值
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AdriftResponse.position">
+            <summary>
+                位置
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AdriftResponse.hyper_link">
+            <summary>
+                廣告超連結
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AdriftResponse.image_link">
+            <summary>
+                圖片路徑
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AdriftResponse.desc">
+            <summary>
+                備註
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AdriftResponse.status">
+            <summary>
+                狀態
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AdriftResponse.utime">
+            <summary>
+                更新時間
+            </summary>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AdriftRequest">
+            <summary>
+            漂浮廣告輸入
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AdriftRequest.id">
+             <summary>
+            唯一值
+             </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AdriftRequest.hyper_link">
+            <summary>
+            廣告超連結
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AdriftRequest.image_link">
+            <summary>
+            圖片路徑
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AdriftRequest.desc">
+            <summary>
+             備註
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AdriftRequest.status">
+            <summary>
+             狀態
+            </summary>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AllSitePopUpResponse">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AllSitePopUpResponse.id">
+            <summary>
+                唯一值
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AllSitePopUpResponse.hyper_link">
+            <summary>
+                廣告超連結
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AllSitePopUpResponse.image_link">
+            <summary>
+                圖片路徑
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AllSitePopUpResponse.desc">
+            <summary>
+                備註
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AllSitePopUpResponse.status">
+            <summary>
+                狀態
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AllSitePopUpResponse.utime">
+            <summary>
+                更新時間
+            </summary>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AllSitePopUpdateRequest">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AllSitePopUpdateRequest.id">
+            <summary>
+                唯一值
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AllSitePopUpdateRequest.position">
+            <summary>
+                位置
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AllSitePopUpdateRequest.hyper_link">
+            <summary>
+                廣告超連結
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AllSitePopUpdateRequest.image_link">
+            <summary>
+                圖片路徑
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AllSitePopUpdateRequest.desc">
+            <summary>
+                備註
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AllSitePopUpdateRequest.status">
+            <summary>
+                狀態
+            </summary>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AddTopBannerRequest">
+            <summary>
+                新增上方橫幅廣告Request
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AddTopBannerRequest.hyper_link">
+            <summary>
+                廣告超連結
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AddTopBannerRequest.image_link">
+            <summary>
+                圖片路徑
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AddTopBannerRequest.desc">
+            <summary>
+                備註
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AddTopBannerRequest.banner_sort">
+            <summary>
+            上方橫幅廣告排序
+            </summary>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.UpdateTopBannerRequest">
+            <summary>
+                更新上方橫幅廣告Request
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.UpdateTopBannerRequest.id">
+            <summary>
+                唯一值
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.UpdateTopBannerRequest.hyper_link">
+            <summary>
+                廣告超連結
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.UpdateTopBannerRequest.image_link">
+            <summary>
+                圖片路徑
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.UpdateTopBannerRequest.desc">
+            <summary>
+                備註
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.UpdateTopBannerRequest.banner_sort">
+            <summary>
+            上方橫幅廣告排序
+            </summary>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.TopBannerResponse">
+            <summary>
+                上方橫幅廣告Response
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.TopBannerResponse.id">
+            <summary>
+                唯一值
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.TopBannerResponse.hyper_link">
+            <summary>
+                廣告超連結
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.TopBannerResponse.image_link">
+            <summary>
+                圖片路徑
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.TopBannerResponse.desc">
+            <summary>
+                備註
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.TopBannerResponse.utime">
+            <summary>
+                更新時間
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.TopBannerResponse.banner_sort">
+            <summary>
+            上方橫幅廣告排序
+            </summary>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.UpdateVideoBannerRequest">
+            <summary>
+                更新影片banner廣告告Request
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.UpdateVideoBannerRequest.id">
+            <summary>
+                唯一值
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.UpdateVideoBannerRequest.hyper_link">
+            <summary>
+                廣告超連結
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.UpdateVideoBannerRequest.image_link">
+            <summary>
+                圖片路徑
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.UpdateVideoBannerRequest.desc">
+            <summary>
+                備註
+            </summary>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AddVideoBannerResponse">
+            <summary>
+            新增影片banner廣告
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AddVideoBannerResponse.id">
+            <summary>
+                唯一值
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AddVideoBannerResponse.hyper_link">
+            <summary>
+                廣告超連結
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AddVideoBannerResponse.image_link">
+            <summary>
+                圖片路徑
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AddVideoBannerResponse.desc">
+            <summary>
+                備註
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AddVideoBannerResponse.utime">
+            <summary>
+                更新時間
+            </summary>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AddVideoBannerRequest">
+            <summary>
+            影片廣告輸出
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AddVideoBannerRequest.hyper_link">
+            <summary>
+                廣告超連結
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AddVideoBannerRequest.image_link">
+            <summary>
+                圖片路徑
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AddVideoBannerRequest.desc">
+            <summary>
+                備註
+            </summary>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.VideoPopUpResponse">
+            <summary>
+            片頭彈窗廣告
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.VideoPopUpResponse.id">
+            <summary>
+                唯一值
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.VideoPopUpResponse.hyper_link">
+            <summary>
+                廣告超連結
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.VideoPopUpResponse.image_link">
+            <summary>
+                圖片路徑
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.VideoPopUpResponse.desc">
+            <summary>
+                備註
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.VideoPopUpResponse.status">
+            <summary>
+                狀態
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.VideoPopUpResponse.utime">
+            <summary>
+                更新時間
+            </summary>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.VideoPopUpUpdateRequest">
+            <summary>
+            更新片頭彈窗廣告
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.VideoPopUpUpdateRequest.id">
+            <summary>
+                唯一值
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.VideoPopUpUpdateRequest.hyper_link">
+            <summary>
+                廣告超連結
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.VideoPopUpUpdateRequest.image_link">
+            <summary>
+                圖片路徑
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.VideoPopUpUpdateRequest.desc">
+            <summary>
+                備註
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.VideoPopUpUpdateRequest.status">
+            <summary>
+                狀態
+            </summary>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Application.AdvertTrafficMaster.IAdvertTrafficMasterService">
+            <summary>
+            流量主後台-我的廣告
+            </summary>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.AdvertTrafficMaster.IAdvertTrafficMasterService.Add_Top_Banner_Record(MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AddTopBannerRequest,System.Int32)">
+            <summary>
+                新增上方橫幅廣告
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.AdvertTrafficMaster.IAdvertTrafficMasterService.Update_Top_Banner_Record(MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.UpdateTopBannerRequest,System.Int32)">
+            <summary>
+                更新上方橫幅廣告
+            </summary>
+            <param name="request"></param>
+            <param name="account_id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.AdvertTrafficMaster.IAdvertTrafficMasterService.del_Top_Banner_Record(System.Int32,System.Int32)">
+            <summary>
+                刪除上方橫幅廣告
+            </summary>
+            <param name="id"></param>
+            <param name="account_id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.AdvertTrafficMaster.IAdvertTrafficMasterService.Get_Top_Banner_Record(System.Int32,System.Int32,System.Int32)">
+            <summary>
+                取得上方橫幅廣告列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.AdvertTrafficMaster.IAdvertTrafficMasterService.GetAdriftList(System.Int32)">
+            <summary>
+            取得漂浮廣告列表
+            </summary>
+            <param name="account_id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.AdvertTrafficMaster.IAdvertTrafficMasterService.UpdateAdrift(MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AdriftRequest,System.Int32)">
+            <summary>
+                更新漂浮廣告
+            </summary>
+            <param name="request"></param>
+            <param name="account_id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.AdvertTrafficMaster.IAdvertTrafficMasterService.GetAllSitePopUp(System.Int32)">
+            <summary>
+                取得全站彈跳視窗
+            </summary>
+            <param name="account_id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.AdvertTrafficMaster.IAdvertTrafficMasterService.UpdateAllSitePopUp(MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AllSitePopUpdateRequest,System.Int32)">
+            <summary>
+                更新全站彈跳視窗
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.AdvertTrafficMaster.IAdvertTrafficMasterService.GetVideoPopUp(System.Int32)">
+            <summary>
+                取得片頭彈窗廣告
+            </summary>
+            <param name="account_id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.AdvertTrafficMaster.IAdvertTrafficMasterService.UpdateVideoPopUp(MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.VideoPopUpUpdateRequest,System.Int32)">
+            <summary>
+                更新片頭彈窗廣告
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.AdvertTrafficMaster.IAdvertTrafficMasterService.Add_Video_Banner_Record(MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AddVideoBannerRequest,System.Int32)">
+            <summary>
+                新增影片banner
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.AdvertTrafficMaster.IAdvertTrafficMasterService.Update_Video_Banner_Record(MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.UpdateVideoBannerRequest,System.Int32)">
+            <summary>
+                更新影片banner
+            </summary>
+            <param name="request"></param>
+            <param name="account_id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.AdvertTrafficMaster.IAdvertTrafficMasterService.del_Video_Banner_Record(System.Int32,System.Int32)">
+            <summary>
+                刪除影片banner
+            </summary>
+            <param name="id"></param>
+            <param name="account_id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.AdvertTrafficMaster.IAdvertTrafficMasterService.Get_Video_Banner_Record(System.Int32,System.Int32,System.Int32)">
+            <summary>
+                取得影片banner列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.PagingLimitOffset.GetOffset(System.Int32,System.Int32)">
+            <summary>
+            select * from table limit numberperpage offset (pagenumber-1)*numberperpage
+            </summary>
+            <param name="pageIndex"></param>
+            <param name="pageRows"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AdriftResponse">
+            <summary>
+            漂浮廣告輸出
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AdriftResponse.id">
+            <summary>
+                唯一值
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AdriftResponse.position">
+            <summary>
+                位置
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AdriftResponse.hyper_link">
+            <summary>
+                廣告超連結
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AdriftResponse.image_link">
+            <summary>
+                圖片路徑
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AdriftResponse.desc">
+            <summary>
+                備註
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AdriftResponse.status">
+            <summary>
+                狀態
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AdriftResponse.utime">
+            <summary>
+                更新時間
+            </summary>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AdriftRequest">
+            <summary>
+            漂浮廣告輸入
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AdriftRequest.id">
+             <summary>
+            唯一值
+             </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AdriftRequest.hyper_link">
+            <summary>
+            廣告超連結
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AdriftRequest.image_link">
+            <summary>
+            圖片路徑
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AdriftRequest.desc">
+            <summary>
+             備註
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AdriftRequest.status">
+            <summary>
+             狀態
+            </summary>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AllSitePopUpResponse">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AllSitePopUpResponse.id">
+            <summary>
+                唯一值
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AllSitePopUpResponse.hyper_link">
+            <summary>
+                廣告超連結
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AllSitePopUpResponse.image_link">
+            <summary>
+                圖片路徑
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AllSitePopUpResponse.desc">
+            <summary>
+                備註
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AllSitePopUpResponse.status">
+            <summary>
+                狀態
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AllSitePopUpResponse.utime">
+            <summary>
+                更新時間
+            </summary>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AllSitePopUpdateRequest">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AllSitePopUpdateRequest.id">
+            <summary>
+                唯一值
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AllSitePopUpdateRequest.position">
+            <summary>
+                位置
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AllSitePopUpdateRequest.hyper_link">
+            <summary>
+                廣告超連結
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AllSitePopUpdateRequest.image_link">
+            <summary>
+                圖片路徑
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AllSitePopUpdateRequest.desc">
+            <summary>
+                備註
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AllSitePopUpdateRequest.status">
+            <summary>
+                狀態
+            </summary>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AddTopBannerRequest">
+            <summary>
+                新增上方橫幅廣告Request
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AddTopBannerRequest.hyper_link">
+            <summary>
+                廣告超連結
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AddTopBannerRequest.image_link">
+            <summary>
+                圖片路徑
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AddTopBannerRequest.desc">
+            <summary>
+                備註
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AddTopBannerRequest.banner_sort">
+            <summary>
+            上方橫幅廣告排序
+            </summary>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.UpdateTopBannerRequest">
+            <summary>
+                更新上方橫幅廣告Request
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.UpdateTopBannerRequest.id">
+            <summary>
+                唯一值
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.UpdateTopBannerRequest.hyper_link">
+            <summary>
+                廣告超連結
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.UpdateTopBannerRequest.image_link">
+            <summary>
+                圖片路徑
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.UpdateTopBannerRequest.desc">
+            <summary>
+                備註
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.UpdateTopBannerRequest.banner_sort">
+            <summary>
+            上方橫幅廣告排序
+            </summary>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.TopBannerResponse">
+            <summary>
+                上方橫幅廣告Response
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.TopBannerResponse.id">
+            <summary>
+                唯一值
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.TopBannerResponse.hyper_link">
+            <summary>
+                廣告超連結
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.TopBannerResponse.image_link">
+            <summary>
+                圖片路徑
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.TopBannerResponse.desc">
+            <summary>
+                備註
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.TopBannerResponse.utime">
+            <summary>
+                更新時間
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.TopBannerResponse.banner_sort">
+            <summary>
+            上方橫幅廣告排序
+            </summary>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.UpdateVideoBannerRequest">
+            <summary>
+                更新影片banner廣告告Request
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.UpdateVideoBannerRequest.id">
+            <summary>
+                唯一值
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.UpdateVideoBannerRequest.hyper_link">
+            <summary>
+                廣告超連結
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.UpdateVideoBannerRequest.image_link">
+            <summary>
+                圖片路徑
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.UpdateVideoBannerRequest.desc">
+            <summary>
+                備註
+            </summary>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AddVideoBannerResponse">
+            <summary>
+            新增影片banner廣告
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AddVideoBannerResponse.id">
+            <summary>
+                唯一值
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AddVideoBannerResponse.hyper_link">
+            <summary>
+                廣告超連結
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AddVideoBannerResponse.image_link">
+            <summary>
+                圖片路徑
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AddVideoBannerResponse.desc">
+            <summary>
+                備註
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AddVideoBannerResponse.utime">
+            <summary>
+                更新時間
+            </summary>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AddVideoBannerRequest">
+            <summary>
+            影片廣告輸出
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AddVideoBannerRequest.hyper_link">
+            <summary>
+                廣告超連結
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AddVideoBannerRequest.image_link">
+            <summary>
+                圖片路徑
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AddVideoBannerRequest.desc">
+            <summary>
+                備註
+            </summary>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.VideoPopUpResponse">
+            <summary>
+            片頭彈窗廣告
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.VideoPopUpResponse.id">
+            <summary>
+                唯一值
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.VideoPopUpResponse.hyper_link">
+            <summary>
+                廣告超連結
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.VideoPopUpResponse.image_link">
+            <summary>
+                圖片路徑
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.VideoPopUpResponse.desc">
+            <summary>
+                備註
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.VideoPopUpResponse.status">
+            <summary>
+                狀態
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.VideoPopUpResponse.utime">
+            <summary>
+                更新時間
+            </summary>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.VideoPopUpUpdateRequest">
+            <summary>
+            更新片頭彈窗廣告
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.VideoPopUpUpdateRequest.id">
+            <summary>
+                唯一值
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.VideoPopUpUpdateRequest.hyper_link">
+            <summary>
+                廣告超連結
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.VideoPopUpUpdateRequest.image_link">
+            <summary>
+                圖片路徑
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.VideoPopUpUpdateRequest.desc">
+            <summary>
+                備註
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.DefaultAdvert.Contract.VideoPopUpUpdateRequest.status">
+            <summary>
+                狀態
+            </summary>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Application.DefaultAdvert.DefaultAdvertService">
+            <summary>
+            預設廣告實作
+            </summary>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.DefaultAdvert.DefaultAdvertService.#ctor(MWM.API.Advert.Service.Domain.DefaultAdvert.IDefaultAdvertRepository)">
+            <summary>
+            </summary>
+            <param name="defaultAdvertRepository"></param>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.DefaultAdvert.DefaultAdvertService.GetAllSitePopUp">
+            <summary>
+                取得全站彈跳視窗
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.DefaultAdvert.DefaultAdvertService.UpdateAllSitePopUp(MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AllSitePopUpdateRequest)">
+            <summary>
+                更新全站彈跳視窗
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.DefaultAdvert.DefaultAdvertService.GetVideoPopUp">
+            <summary>
+                取得片頭彈窗廣告
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.DefaultAdvert.DefaultAdvertService.UpdateVideoPopUp(MWM.API.Advert.Service.Application.DefaultAdvert.Contract.VideoPopUpUpdateRequest)">
+            <summary>
+                更新片頭彈窗廣告
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.DefaultAdvert.DefaultAdvertService.Add_Top_Banner_Record(MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AddTopBannerRequest)">
+            <summary>
+                新增上方橫幅廣告
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.DefaultAdvert.DefaultAdvertService.Update_Top_Banner_Record(MWM.API.Advert.Service.Application.DefaultAdvert.Contract.UpdateTopBannerRequest)">
+            <summary>
+                更新上方橫幅廣告
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.DefaultAdvert.DefaultAdvertService.del_Top_Banner_Record(System.Int32)">
+            <summary>
+                刪除上方橫幅廣告
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.DefaultAdvert.DefaultAdvertService.Get_Top_Banner_Record(System.Int32,System.Int32)">
+            <summary>
+                取得上方橫幅廣告列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.DefaultAdvert.DefaultAdvertService.GetAdriftList">
+            <summary>
+                取得漂浮廣告列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.DefaultAdvert.DefaultAdvertService.UpdateAdrift(MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AdriftRequest)">
+            <summary>
+                更新漂浮廣告
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.DefaultAdvert.DefaultAdvertService.Add_Video_Banner_Record(MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AddVideoBannerRequest)">
+            <summary>
+                新增影片banner
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.DefaultAdvert.DefaultAdvertService.Update_Video_Banner_Record(MWM.API.Advert.Service.Application.DefaultAdvert.Contract.UpdateVideoBannerRequest)">
+            <summary>
+                更新影片banner
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.DefaultAdvert.DefaultAdvertService.del_Video_Banner_Record(System.Int32)">
+            <summary>
+                刪除影片banner
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.DefaultAdvert.DefaultAdvertService.Get_Video_Banner_Record(System.Int32,System.Int32)">
+            <summary>
+                取得影片banner列表
+            </summary>
+            <param name="index"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Application.DefaultAdvert.IDefaultAdvertService">
+            <summary>
+            預設廣告介面
+            </summary>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.DefaultAdvert.IDefaultAdvertService.Add_Top_Banner_Record(MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AddTopBannerRequest)">
+            <summary>
+                新增上方橫幅廣告
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.DefaultAdvert.IDefaultAdvertService.Update_Top_Banner_Record(MWM.API.Advert.Service.Application.DefaultAdvert.Contract.UpdateTopBannerRequest)">
+            <summary>
+                更新上方橫幅廣告
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.DefaultAdvert.IDefaultAdvertService.del_Top_Banner_Record(System.Int32)">
+            <summary>
+                刪除上方橫幅廣告
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.DefaultAdvert.IDefaultAdvertService.Get_Top_Banner_Record(System.Int32,System.Int32)">
+            <summary>
+                取得上方橫幅廣告列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.DefaultAdvert.IDefaultAdvertService.GetAdriftList">
+            <summary>
+                取得漂浮廣告列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.DefaultAdvert.IDefaultAdvertService.UpdateAdrift(MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AdriftRequest)">
+            <summary>
+                更新漂浮廣告
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.DefaultAdvert.IDefaultAdvertService.GetAllSitePopUp">
+            <summary>
+                取得全站彈跳視窗
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.DefaultAdvert.IDefaultAdvertService.UpdateAllSitePopUp(MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AllSitePopUpdateRequest)">
+            <summary>
+                更新全站彈跳視窗
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.DefaultAdvert.IDefaultAdvertService.GetVideoPopUp">
+            <summary>
+                取得片頭彈窗廣告
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.DefaultAdvert.IDefaultAdvertService.UpdateVideoPopUp(MWM.API.Advert.Service.Application.DefaultAdvert.Contract.VideoPopUpUpdateRequest)">
+            <summary>
+                更新片頭彈窗廣告
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.DefaultAdvert.IDefaultAdvertService.Add_Video_Banner_Record(MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AddVideoBannerRequest)">
+            <summary>
+                新增影片banner
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.DefaultAdvert.IDefaultAdvertService.Update_Video_Banner_Record(MWM.API.Advert.Service.Application.DefaultAdvert.Contract.UpdateVideoBannerRequest)">
+            <summary>
+                更新影片banner
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.DefaultAdvert.IDefaultAdvertService.del_Video_Banner_Record(System.Int32)">
+            <summary>
+                刪除影片banner
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.DefaultAdvert.IDefaultAdvertService.Get_Video_Banner_Record(System.Int32,System.Int32)">
+            <summary>
+                取得影片banner列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.Receivable.Contract.CreateUpdateBankRequest.bank_number">
+            <summary>
+            卡號
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.Receivable.Contract.CreateUpdateBankRequest.user_name">
+            <summary>
+            戶名
+            </summary>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Application.SponsorAdvertTrafficMaster.Contract.SponsorTrafficMasterRequest">
+            <summary>
+            全民贊助傳入參數
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.SponsorAdvertTrafficMaster.Contract.SponsorTrafficMasterRequest.image_link">
+            <summary>
+            圖片連結
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.SponsorAdvertTrafficMaster.Contract.SponsorTrafficMasterRequest.hyper_link">
+            <summary>
+            網址連結
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.SponsorAdvertTrafficMaster.Contract.SponsorTrafficMasterRequest.device_type">
+            <summary>
+            裝置類型:0.PC,1.Mobile
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.SponsorAdvertTrafficMaster.Contract.SponsorTrafficMasterRequest.position_type">
+            <summary>
+            位置：0.頂天,1.地板
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.SponsorAdvertTrafficMaster.Contract.SponsorTrafficMasterRequest.desc">
+            <summary>
+            說明
+            </summary>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Application.SponsorAdvertTrafficMaster.Contract.SponsorTrafficMasterResponse">
+            <summary>
+            輸出
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.SponsorAdvertTrafficMaster.Contract.SponsorTrafficMasterResponse.id">
+            <summary>
+            流水號-唯一值
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.SponsorAdvertTrafficMaster.Contract.SponsorTrafficMasterResponse.account_id">
+            <summary>
+            流量主id
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.SponsorAdvertTrafficMaster.Contract.SponsorTrafficMasterResponse.image_link">
+            <summary>
+            圖片連結
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.SponsorAdvertTrafficMaster.Contract.SponsorTrafficMasterResponse.hyper_link">
+            <summary>
+            網址連結
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.SponsorAdvertTrafficMaster.Contract.SponsorTrafficMasterResponse.position_type">
+            <summary>
+            位置：0.頂天,1.地板
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.SponsorAdvertTrafficMaster.Contract.SponsorTrafficMasterResponse.device_type">
+            <summary>
+            裝置類型
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.SponsorAdvertTrafficMaster.Contract.SponsorTrafficMasterResponse.desc">
+            <summary>
+            說明
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.SponsorAdvertTrafficMaster.Contract.SponsorTrafficMasterResponse.utime">
+            <summary>
+            更新時間
+            </summary>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Application.SponsorAdvertTrafficMaster.Contract.UpdateSponsorTrafficMasterRequest">
+            <summary>
+            更新平面廣告-傳入參數
+            </summary>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Application.SponsorAdvertTrafficMaster.ISponsorAdvertTrafficMasterService">
+            <summary>
+            流量主-全民贊助廣告
+            </summary>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.SponsorAdvertTrafficMaster.ISponsorAdvertTrafficMasterService.Add_Print_Record(System.Int32,MWM.API.Advert.Service.Application.SponsorAdvertTrafficMaster.Contract.SponsorTrafficMasterRequest)">
+             <summary>
+            新增全民贊助廣告
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.SponsorAdvertTrafficMaster.ISponsorAdvertTrafficMasterService.Update_Print_Record(System.Int32,MWM.API.Advert.Service.Application.SponsorAdvertTrafficMaster.Contract.UpdateSponsorTrafficMasterRequest)">
+            <summary>
+            更新全民贊助廣告
+            </summary>
+            <param name="account_id"></param>
+            <param name="trafficMasterRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.SponsorAdvertTrafficMaster.ISponsorAdvertTrafficMasterService.Del_Print_Record(System.Int32)">
+            <summary>
+            刪除全民贊助廣告
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.SponsorAdvertTrafficMaster.ISponsorAdvertTrafficMasterService.Get_Print_Record(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            取得全民贊助廣告列表
+            </summary>
+            <param name="account_id"></param>
+            <param name="index"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Application.SponsorAdvertTrafficMaster.SponsorAdvertTrafficMasterService">
+            <summary>
+            流量主-全民贊助廣告
+            </summary>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.SponsorAdvertTrafficMaster.SponsorAdvertTrafficMasterService.#ctor(MWM.API.Advert.Service.Domain.SponsorAdvertTrafficMaster.ISponsorAdvertTrafficMasterRepository)">
+            <summary>
+            
+            </summary>
+            <param name="sponsorAdvertTrafficMasterRepository"></param>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.SponsorAdvertTrafficMaster.SponsorAdvertTrafficMasterService.Add_Print_Record(System.Int32,MWM.API.Advert.Service.Application.SponsorAdvertTrafficMaster.Contract.SponsorTrafficMasterRequest)">
+            <summary>
+            
+            </summary>
+            <param name="account_id"></param>
+            <param name="trafficMasterRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.SponsorAdvertTrafficMaster.SponsorAdvertTrafficMasterService.Update_Print_Record(System.Int32,MWM.API.Advert.Service.Application.SponsorAdvertTrafficMaster.Contract.UpdateSponsorTrafficMasterRequest)">
+            <summary>
+            
+            </summary>
+            <param name="account_id"></param>
+            <param name="trafficMasterRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.SponsorAdvertTrafficMaster.SponsorAdvertTrafficMasterService.Del_Print_Record(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.SponsorAdvertTrafficMaster.SponsorAdvertTrafficMasterService.Get_Print_Record(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="account_id"></param>
+            <param name="index"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Application.SponsorAdvert.Contract.SponsorAdvertRequest">
+            <summary>
+            新增平面廣告傳入參數
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.SponsorAdvert.Contract.SponsorAdvertRequest.image_link">
+            <summary>
+            圖片連結
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.SponsorAdvert.Contract.SponsorAdvertRequest.hyper_link">
+            <summary>
+            網址連結
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.SponsorAdvert.Contract.SponsorAdvertRequest.device_type">
+            <summary>
+            裝置類型:0.PC,1.Mobile
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.SponsorAdvert.Contract.SponsorAdvertRequest.position_type">
+            <summary>
+            位置：0.頂天,1.地板
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.SponsorAdvert.Contract.SponsorAdvertRequest.desc">
+            <summary>
+            說明
+            </summary>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Application.SponsorAdvert.Contract.SponsorAdvertResponse">
+            <summary>
+            輸出
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.SponsorAdvert.Contract.SponsorAdvertResponse.id">
+            <summary>
+            流水號-唯一值
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.SponsorAdvert.Contract.SponsorAdvertResponse.image_link">
+            <summary>
+            圖片連結
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.SponsorAdvert.Contract.SponsorAdvertResponse.device_type">
+            <summary>
+            裝置類型:0.PC,1.Mobile
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.SponsorAdvert.Contract.SponsorAdvertResponse.hyper_link">
+            <summary>
+            網址連結
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.SponsorAdvert.Contract.SponsorAdvertResponse.position_type">
+            <summary>
+            位置：0.頂天,1.地板
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.SponsorAdvert.Contract.SponsorAdvertResponse.desc">
+            <summary>
+            說明
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.SponsorAdvert.Contract.SponsorAdvertResponse.utime">
+            <summary>
+            更新時間
+            </summary>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Application.SponsorAdvert.Contract.UpdateSponsorAdvertRequest">
+            <summary>
+            更新平面廣告-傳入參數
+            </summary>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Application.SponsorAdvert.ISponsorAdvertService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.SponsorAdvert.ISponsorAdvertService.Add_Print_Record(MWM.API.Advert.Service.Application.SponsorAdvert.Contract.SponsorAdvertRequest)">
+             <summary>
+            新增平面廣告
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.SponsorAdvert.ISponsorAdvertService.Update_Print_Record(MWM.API.Advert.Service.Application.SponsorAdvert.Contract.UpdateSponsorAdvertRequest)">
+            <summary>
+            更新平面廣告
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.SponsorAdvert.ISponsorAdvertService.Del_Print_Record(System.Int32)">
+            <summary>
+            刪除平面廣告
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.SponsorAdvert.ISponsorAdvertService.Get_Print_Record(System.Int32,System.Int32)">
+            <summary>
+            取得平面廣告列表
+            </summary>
+            <param name="index"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Application.SponsorAdvert.SponsorAdvertService">
+            <summary>
+            後台操作-廣告聯盟  
+            </summary>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.SponsorAdvert.SponsorAdvertService.#ctor(MWM.API.Advert.Service.Domain.SponsorAdvert.ISponsorAdvertRepository)">
+            <summary>
+            
+            </summary>
+            <param name="sponsorAdvertRepository"></param>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.SponsorAdvert.SponsorAdvertService.Add_Print_Record(MWM.API.Advert.Service.Application.SponsorAdvert.Contract.SponsorAdvertRequest)">
+            <summary>
+            新增平面廣告
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.SponsorAdvert.SponsorAdvertService.Update_Print_Record(MWM.API.Advert.Service.Application.SponsorAdvert.Contract.UpdateSponsorAdvertRequest)">
+            <summary>
+            更新平面廣告
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.SponsorAdvert.SponsorAdvertService.Del_Print_Record(System.Int32)">
+            <summary>
+            刪除平面廣告
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.SponsorAdvert.SponsorAdvertService.Get_Print_Record(System.Int32,System.Int32)">
+            <summary>
+            取得平面廣告列表
+            </summary>
+            <param name="index"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Application.VideoAdvert.video.Contract.MarqueeRequest">
+            <summary>
+            新增跑馬燈
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.VideoAdvert.video.Contract.MarqueeRequest.title">
+            <summary>
+            廣告名稱
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.VideoAdvert.video.Contract.MarqueeRequest.hyper_link">
+            <summary>
+            廣告連結
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.VideoAdvert.video.Contract.MarqueeRequest.color">
+            <summary>
+            文字顏色
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.VideoAdvert.video.Contract.MarqueeRequest.position">
+            <summary>
+            位置 0上,1下
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.VideoAdvert.video.Contract.MarqueeRequest.advert_text">
+            <summary>
+            廣告文字
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.VideoAdvert.video.Contract.MarqueeRequest.loop_type">
+            <summary>
+            循環方式 0:循環,1:出現一次
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.VideoAdvert.video.Contract.MarqueeRequest.default_time">
+            <summary>
+            預設時間 0:隨機出現
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.VideoAdvert.video.Contract.MarqueeRequest.start_time">
+            <summary>
+            開始時間
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.VideoAdvert.video.Contract.MarqueeRequest.end_time">
+            <summary>
+            結束時間
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.VideoAdvert.video.Contract.MarqueeRequest.status">
+            <summary>
+            狀態.0關閉,1啟用
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.VideoAdvert.video.Contract.MarqueeRequest.desc">
+            <summary>
+            備註
+            </summary>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Application.VideoAdvert.video.Contract.UpdateMarqueeRequest">
+            <summary>
+            更新
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.VideoAdvert.video.Contract.UpdateMarqueeRequest.id">
+            <summary>
+            唯一值
+            </summary>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Application.VideoAdvert.video.Contract.VideoRequest">
+            <summary>
+            影片廣告參數
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.VideoAdvert.video.Contract.VideoRequest.title">
+            <summary>
+            廣告名稱
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.VideoAdvert.video.Contract.VideoRequest.hyper_link">
+            <summary>
+            廣告連結
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.VideoAdvert.video.Contract.VideoRequest.video_link">
+            <summary>
+            影片廣告連結
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.VideoAdvert.video.Contract.VideoRequest.skip_time">
+            <summary>
+            廣告可略過時間
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.VideoAdvert.video.Contract.VideoRequest.default_time">
+            <summary>
+            預設時間 0:隨機出現
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.VideoAdvert.video.Contract.VideoRequest.start_time">
+            <summary>
+            開始時間
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.VideoAdvert.video.Contract.VideoRequest.end_time">
+            <summary>
+            結束時間
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.VideoAdvert.video.Contract.VideoRequest.status">
+            <summary>
+            狀態.0關閉,1啟用
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.VideoAdvert.video.Contract.VideoRequest.desc">
+            <summary>
+            備註
+            </summary>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Application.VideoAdvert.video.Contract.UpdateVideoRequest">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.VideoAdvert.video.Contract.UpdateVideoRequest.id">
+            <summary>
+            唯一值
+            </summary>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Application.VideoAdvert.video.Contract.VideoAllResponse">
+            <summary>
+            影片廣告回傳參數
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.VideoAdvert.video.Contract.VideoAllResponse.id">
+            <summary>
+            唯一值
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.VideoAdvert.video.Contract.VideoAllResponse.title">
+            <summary>
+            廣告名稱
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.VideoAdvert.video.Contract.VideoAllResponse.start_time">
+            <summary>
+            開始時間
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.VideoAdvert.video.Contract.VideoAllResponse.end_time">
+            <summary>
+            結束時間
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.VideoAdvert.video.Contract.VideoAllResponse.status">
+            <summary>
+            狀態.0關閉,1啟用
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.VideoAdvert.video.Contract.VideoAllResponse.desc">
+            <summary>
+            備註
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Application.VideoAdvert.video.Contract.VideoAllResponse.detail">
+            <summary>
+            該筆資料詳細資訊
+            </summary>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Application.VideoAdvert.video.IVideoAdvertVideoService">
+            <summary>
+             官網後台-影片廣告區域
+            </summary>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.VideoAdvert.video.IVideoAdvertVideoService.Add_Marquee_Record(MWM.API.Advert.Service.Application.VideoAdvert.video.Contract.MarqueeRequest)">
+             <summary>
+            新增跑馬燈廣告
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.VideoAdvert.video.IVideoAdvertVideoService.Update_Marquee_Record(MWM.API.Advert.Service.Application.VideoAdvert.video.Contract.UpdateMarqueeRequest)">
+            <summary>
+            更新跑馬燈廣告
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.VideoAdvert.video.IVideoAdvertVideoService.Del_Marquee_Record(System.Int32)">
+            <summary>
+            刪除跑馬燈廣告
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.VideoAdvert.video.IVideoAdvertVideoService.Add_Video_Record(MWM.API.Advert.Service.Application.VideoAdvert.video.Contract.VideoRequest)">
+             <summary>
+            新增影片廣告
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.VideoAdvert.video.IVideoAdvertVideoService.Update_Video_Record(MWM.API.Advert.Service.Application.VideoAdvert.video.Contract.UpdateVideoRequest)">
+             <summary>
+            更新影片廣告
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.VideoAdvert.video.IVideoAdvertVideoService.Del_Video_Record(System.Int32)">
+            <summary>
+            刪除影片廣告
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.VideoAdvert.video.IVideoAdvertVideoService.Get_VideoAll_Record(System.Int32,System.Int32)">
+            <summary>
+            取得影片廣告列表
+            </summary>
+            <param name="index"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Application.VideoAdvert.video.VideoAdvertVideoService">
+            <summary>
+            官網後台-影片廣告區域
+            </summary>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.VideoAdvert.video.VideoAdvertVideoService.#ctor(MWM.API.Advert.Service.Domain.VideoAdvert.IVideoAdvertRepository)">
+            <summary>
+            建構式
+            </summary>
+            <param name="videoAdvertRepository"></param>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.VideoAdvert.video.VideoAdvertVideoService.Add_Marquee_Record(MWM.API.Advert.Service.Application.VideoAdvert.video.Contract.MarqueeRequest)">
+            <summary>
+            新增跑馬燈廣告
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.VideoAdvert.video.VideoAdvertVideoService.Update_Marquee_Record(MWM.API.Advert.Service.Application.VideoAdvert.video.Contract.UpdateMarqueeRequest)">
+            <summary>
+            更新跑馬燈廣告
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.VideoAdvert.video.VideoAdvertVideoService.Del_Marquee_Record(System.Int32)">
+            <summary>
+            刪除跑馬燈
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.VideoAdvert.video.VideoAdvertVideoService.Add_Video_Record(MWM.API.Advert.Service.Application.VideoAdvert.video.Contract.VideoRequest)">
+            <summary>
+            新增影片廣告
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.VideoAdvert.video.VideoAdvertVideoService.Update_Video_Record(MWM.API.Advert.Service.Application.VideoAdvert.video.Contract.UpdateVideoRequest)">
+            <summary>
+            更新影片廣告
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.VideoAdvert.video.VideoAdvertVideoService.Del_Video_Record(System.Int32)">
+            <summary>
+            刪除影片廣告
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Application.VideoAdvert.video.VideoAdvertVideoService.Get_VideoAll_Record(System.Int32,System.Int32)">
+            <summary>
+            取得影片廣告列表
+            </summary>
+            <param name="index"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Controllers.AdvertTrafficMasterController">
+            <summary>
+                流量主後台-我的廣告操作
+            </summary>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.AdvertTrafficMasterController.#ctor(MWM.API.Advert.Service.Application.AdvertTrafficMaster.IAdvertTrafficMasterService,MWM.Extensions.Authentication.JWT.IGetJwtTokenInfoService,MWM.API.Advert.Service.Application.SponsorAdvertTrafficMaster.ISponsorAdvertTrafficMasterService,MWM.API.Advert.Service.Application.AdvertConfig.IAdvertConfigService,MWM.API.Advert.Service.Application.SponsorAdvertTrafficMaster.ISponsorAdvertTrafficMasterService,MWM.API.Advert.Service.Application.SponsorAdvert.ISponsorAdvertService)">
+            <summary>
+            </summary>
+            <param name="advertTrafficMasterService"></param>
+            <param name="getJwtTokenInfo"></param>
+            <param name="sponsorAdvertTrafficMasterService"></param>
+            <param name="advertConfigService"></param>
+            <param name="sponsorAdvertService"></param>
+            <param name="sponsorAdvertService1"></param>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.AdvertTrafficMasterController.Get_Adrift">
+            <summary>流量主後台-我的廣告-取得漂浮廣告列表</summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.AdvertTrafficMasterController.Update_Adrift(MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AdriftRequest)">
+            <summary> 流量主後台-我的廣告-更新漂浮廣吿 </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.AdvertTrafficMasterController.GetAllSitePopUp">
+            <summary>
+                流量主後台-我的廣告-取得全站廣告彈窗
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.AdvertTrafficMasterController.UpdateAllSitePopUp(MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AllSitePopUpdateRequest)">
+            <summary>
+                流量主後台-我的廣告-更新全站廣告彈窗
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.AdvertTrafficMasterController.GetVideoPopUp">
+            <summary>
+                流量主後台-我的廣告-取得片頭彈窗廣告
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.AdvertTrafficMasterController.UpdateVideoPopUp(MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.VideoPopUpUpdateRequest)">
+            <summary>
+                流量主後台-我的廣告-更新片頭彈窗廣告
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.AdvertTrafficMasterController.GetTopBannerList(System.Int32,System.Int32)">
+            <summary> 流量主後台-我的廣告-取得上方橫幅廣告列表 </summary>
+            <param name="index"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.AdvertTrafficMasterController.AddTopBanner(MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AddTopBannerRequest)">
+            <summary>
+                流量主後台-我的廣告-新增上方橫幅廣告
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.AdvertTrafficMasterController.UpdateTopBanner(MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.UpdateTopBannerRequest)">
+            <summary>
+                流量主後台-我的廣告-更新上方橫幅廣告
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.AdvertTrafficMasterController.DelTopBanner(System.Int32)">
+            <summary>
+                流量主後台-我的廣告-刪除上方橫幅廣告
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.AdvertTrafficMasterController.GetVideoBannerList(System.Int32,System.Int32)">
+            <summary>
+                流量主後台-我的廣告-取得影片Banner
+            </summary>
+            <param name="index"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.AdvertTrafficMasterController.AddVideoBanner(MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.AddVideoBannerRequest)">
+            <summary>
+                流量主後台-我的廣告-新增影片Banner
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.AdvertTrafficMasterController.UpdateVideoBanner(MWM.API.Advert.Service.Application.AdvertTrafficMaster.Contract.UpdateVideoBannerRequest)">
+            <summary>
+                流量主後台-我的廣告-更新影片Banner
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.AdvertTrafficMasterController.DelVideoBanner(System.Int32)">
+            <summary>
+                流量主後台-我的廣告-刪除影片Banner
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.AdvertTrafficMasterController.Get_SponsorList(System.Int32,System.Int32)">
+            <summary> 流量主後台-取得全民贊助廣告列表 </summary>
+            <param name="index"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.AdvertTrafficMasterController.AddSponsor(MWM.API.Advert.Service.Application.SponsorAdvertTrafficMaster.Contract.SponsorTrafficMasterRequest)">
+            <summary>
+                流量主後台-新增全民贊助廣告
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.AdvertTrafficMasterController.UpdateSponsor(MWM.API.Advert.Service.Application.SponsorAdvertTrafficMaster.Contract.UpdateSponsorTrafficMasterRequest)">
+            <summary>
+                流量主後台-更新全民贊助廣告
+            </summary>
+            <param name="trafficMasterRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.AdvertTrafficMasterController.Del_sponsor(System.Int32)">
+            <summary>
+                流量主後台-刪除全民贊助廣告
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Controllers.DefaultAdvertController">
+            <summary>官網後台-操作預設廣告API</summary>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.DefaultAdvertController.#ctor(MWM.API.Advert.Service.Application.DefaultAdvert.IDefaultAdvertService,MWM.API.Advert.Service.Application.SponsorAdvert.ISponsorAdvertService,MWM.API.Advert.Service.Application.AdvertConfig.IAdvertConfigService)">
+             <summary>
+            後台人員操作預設廣告
+             </summary>
+             <param name="defaultAdvertService"></param>
+             <param name="sponsorAdvertService"></param>
+             <param name="advertConfigService"></param>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.DefaultAdvertController.Get_Adrift">
+            <summary> 官網後台-取得漂浮廣告列表</summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.DefaultAdvertController.Update_Adrift(MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AdriftRequest)">
+            <summary> 官網後台-更新漂浮廣吿 </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.DefaultAdvertController.GetAllSitePopUp">
+            <summary>
+                官網後台-取得全站廣告彈窗
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.DefaultAdvertController.UpdateAllSitePopUp(MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AllSitePopUpdateRequest)">
+            <summary>
+                官網後台-更新全站廣告彈窗
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.DefaultAdvertController.GetVideoPopUp">
+            <summary>
+               官網後台- 取得片頭彈窗廣告
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.DefaultAdvertController.UpdateVideoPopUp(MWM.API.Advert.Service.Application.DefaultAdvert.Contract.VideoPopUpUpdateRequest)">
+            <summary>
+               官網後台- 更新片頭彈窗廣告
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.DefaultAdvertController.GetTopBannerList(System.Int32,System.Int32)">
+            <summary> 官網後台-取得上方橫幅廣告列表 </summary>
+            <param name="index"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.DefaultAdvertController.AddTopBanner(MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AddTopBannerRequest)">
+            <summary>
+                官網後台-新增上方橫幅廣告
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.DefaultAdvertController.UpdateTopBanner(MWM.API.Advert.Service.Application.DefaultAdvert.Contract.UpdateTopBannerRequest)">
+            <summary>
+                官網後台-更新上方橫幅廣告
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.DefaultAdvertController.DelTopBanner(System.Int32)">
+            <summary>
+                官網後台-刪除上方橫幅廣告
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.DefaultAdvertController.GetVideoBannerList(System.Int32,System.Int32)">
+            <summary>
+            官網後台-取得影片Banner
+            </summary>
+            <param name="index"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.DefaultAdvertController.AddVideoBanner(MWM.API.Advert.Service.Application.DefaultAdvert.Contract.AddVideoBannerRequest)">
+             <summary>
+            官網後台-新增影片Banner
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.DefaultAdvertController.UpdateVideoBanner(MWM.API.Advert.Service.Application.DefaultAdvert.Contract.UpdateVideoBannerRequest)">
+             <summary>
+            官網後台-更新影片Banner
+             </summary>
+             <param name="request"></param>
+             <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.DefaultAdvertController.DelVideoBanner(System.Int32)">
+             <summary>
+            官網後台-刪除影片Banner
+             </summary>
+             <param name="id"></param>
+             <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.DefaultAdvertController.AddPrint(MWM.API.Advert.Service.Application.SponsorAdvert.Contract.SponsorAdvertRequest)">
+            <summary>
+            官網後台-新增全民贊助廣告
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.DefaultAdvertController.UpdatePrint(MWM.API.Advert.Service.Application.SponsorAdvert.Contract.UpdateSponsorAdvertRequest)">
+            <summary>
+            官網後台-更新全民贊助廣告
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.DefaultAdvertController.DelPrint(System.Int32)">
+            <summary>
+            官網後台-刪除全民贊助廣告
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.DefaultAdvertController.GetPrintAll(System.Int32,System.Int32)">
+            <summary> 官網後台-取得全民贊助廣告列表</summary>
+            <param name="index"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.DefaultAdvertController.UpdateSponsorEnable(System.Boolean)">
+            <summary>
+            官網後台-開啟或關閉全民贊助廣告
+            </summary>
+            <param name="enable_status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.DefaultAdvertController.SponsorStatus(System.Boolean)">
+            <summary>
+            官網後台-全民贊助廣告狀態
+            </summary>
+            <param name="enable_status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.ReceivableController.GetAllpassword(System.Int32,System.Int32)">
+            <summary>
+            公司後台-取得所有密碼LIST 人工更改查詢可用
+            </summary>
+            <param name="page"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.ReceivableController.GetPasswordByAccount(System.Int64)">
+            <summary>
+            公司後台-依帳戶取得密碼
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.ReceivableController.GetPasswordById(System.Int64,System.Int64)">
+            <summary>
+             公司後台-依ID,帳戶ID取得密碼
+            </summary>
+            <param name="id">流水號ID</param>
+            <param name="account_id">流量主ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.ReceivableController.ResetPassword(System.Int64)">
+            <summary>
+            公司後台-重置流量主提現密碼
+            </summary>
+            <param name="request">流量主ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.ReceivableController.CreatePassword(MWM.API.Advert.Service.Application.Receivable.Contract.CreatePasswordRequest)">
+             <summary>
+            流量主-建立提現密碼
+             </summary>
+             <param name="request"></param>
+             <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.ReceivableController.UpdatePassword(MWM.API.Advert.Service.Application.Receivable.Contract.UpdatePasswordRequest)">
+            <summary>
+            流量主--修改提現密碼
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.ReceivableController.DeletePassword(System.Int64)">
+            <summary>
+            流量主--刪除密碼
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.ReceivableController.CheckExist">
+            <summary>
+            流量主，確認是否已經建立提現密碼
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.ReceivableController.GetBankByAccount(System.Int32,System.Int32)">
+            <summary>
+            流量主--依帳戶取得收款訊息列表 ,下拉選單可用
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.ReceivableController.CreateBank(MWM.API.Advert.Service.Application.Receivable.Contract.CreateUpdateBankRequest)">
+            <summary>
+            流量主--新增收款信息
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.ReceivableController.UpdateBank(MWM.API.Advert.Service.Application.Receivable.Contract.CreateUpdateBankRequest)">
+            <summary>
+            流量主--修改收款訊息
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.ReceivableController.DeleteBank(System.Int64)">
+            <summary>
+            流量主--刪除銀行帳號
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.ReceivableController.GetRecordForMerchant(System.Int32,System.Int32)">
+            <summary>
+            管理後台 取得用戶待提現列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.ReceivableController.MerchantGetRecord(System.Int32,System.Int32)">
+            <summary>
+            流量主-提現記錄
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.ReceivableController.GetRecordById(System.Int64)">
+            <summary>
+            依紀錄ID取得出金資料(水單)
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.ReceivableController.CreateRecord(MWM.API.Advert.Service.Application.Receivable.Contract.CreateRecordRequest)">
+            <summary>
+            流量主-申請出金
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.ReceivableController.Paid(MWM.API.Advert.Service.Application.Receivable.Record.PaidRequest)">
+            <summary>
+            公司後台-確認出金
+            </summary>
+            <param name="request">需要accountid ,token取得ID為執行付款者ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.ReceivableController.Cancel(MWM.API.Advert.Service.Application.Receivable.Record.CancelRequest)">
+            <summary>
+            流量主人工申請，我方客服-取消出金
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.ReceivableController.Query(MWM.API.Advert.Service.Application.Receivable.Record.QueryRequest)">
+            <summary>
+            搜尋
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.ReceivableController.Notify(System.Int64,System.Int64,System.Int32)">
+            <summary>
+            改變通知狀態
+            </summary>
+            <param name="account_id"></param>
+            <param name="record_id"></param>
+            <param name="notify">0 新增紀錄1已通知管理員2 需要通知客戶(已付款)3 客戶已通知</param>
+            <returns></returns>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Controllers.VideoAdvertController">
+            <summary>
+            官網後台-人員操作影片廣告區域API
+            </summary>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.VideoAdvertController.#ctor(MWM.API.Advert.Service.Application.VideoAdvert.video.IVideoAdvertVideoService)">
+            <summary>
+            建構式
+            </summary>
+            <param name="videoAdvertVideoService"></param>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.VideoAdvertController.AddMarquee(MWM.API.Advert.Service.Application.VideoAdvert.video.Contract.MarqueeRequest)">
+            <summary>
+            官網後台-新增跑馬燈
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.VideoAdvertController.UpdateMarquee(MWM.API.Advert.Service.Application.VideoAdvert.video.Contract.UpdateMarqueeRequest)">
+            <summary>
+            官網後台-更新跑馬燈
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.VideoAdvertController.DelMarquee(System.Int32)">
+            <summary>
+            官網後台-刪除跑馬燈
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.VideoAdvertController.AddVideo(MWM.API.Advert.Service.Application.VideoAdvert.video.Contract.VideoRequest)">
+            <summary>
+            官網後台-新增影片
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.VideoAdvertController.UpdateVideo(MWM.API.Advert.Service.Application.VideoAdvert.video.Contract.UpdateVideoRequest)">
+            <summary>
+            官網後台-更新影片
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.VideoAdvertController.DelVideo(System.Int32)">
+            <summary>
+            官網後台-刪除影片
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Controllers.VideoAdvertController.GetVideoAll(System.Int32,System.Int32)">
+            <summary> 官網後台-取得影片廣告列表 </summary>
+            <param name="index"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Domain.AdvertConfig.AdvertConfigRepository">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Domain.AdvertConfig.AdvertConfigRepository.#ctor(Phoenixnet.Extensions.Data.MySql.IDbFactory)">
+            <summary>
+            
+            </summary>
+            <param name="dbFactory"></param>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Domain.AdvertConfig.AdvertConfigRepository.Sponsor_isEnable">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Domain.AdvertConfig.AdvertConfigRepository.Update_Record(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="enable"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Domain.AdvertConfig.IAdvertConfigRepository">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Domain.AdvertConfig.IAdvertConfigRepository.Sponsor_isEnable">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Domain.AdvertConfig.IAdvertConfigRepository.Update_Record(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Domain.AdvertTrafficMaster.AdvertTrafficMasterEntity">
+            <summary>
+            流量主後台-我的廣告
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.AdvertTrafficMaster.AdvertTrafficMasterEntity.id">
+            <summary>
+             唯一值
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.AdvertTrafficMaster.AdvertTrafficMasterEntity.account_id">
+            <summary>
+             商戶ID
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.AdvertTrafficMaster.AdvertTrafficMasterEntity.default_ads_type">
+            <summary>
+            0:漂浮廣告,1:全站彈跳廣告,2:片頭彈窗廣告,3:上方橫幅廣告,4:影片banner廣告
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.AdvertTrafficMaster.AdvertTrafficMasterEntity.hyper_link">
+            <summary>
+            廣告超連結
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.AdvertTrafficMaster.AdvertTrafficMasterEntity.image_link">
+            <summary>
+            圖片路徑
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.AdvertTrafficMaster.AdvertTrafficMasterEntity.desc">
+            <summary>
+            說明
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.AdvertTrafficMaster.AdvertTrafficMasterEntity.banner_sort">
+            <summary>
+            上方橫幅廣告排序
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.AdvertTrafficMaster.AdvertTrafficMasterEntity.position">
+            <summary>
+            廣告位置
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.AdvertTrafficMaster.AdvertTrafficMasterEntity.ctime">
+            <summary>
+            建立時間
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.AdvertTrafficMaster.AdvertTrafficMasterEntity.utime">
+            <summary>
+            更新時間
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.AdvertTrafficMaster.AdvertTrafficMasterEntity.state">
+            <summary>
+            0:停用,1:啟用
+            </summary>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Domain.AdvertTrafficMaster.AdvertTrafficMasterRepository">
+            <summary>
+            流量主後台-我的廣告
+            </summary>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Domain.AdvertTrafficMaster.AdvertTrafficMasterRepository.#ctor(Phoenixnet.Extensions.Data.MySql.IDbFactory)">
+            <summary>
+            
+            </summary>
+            <param name="dbFactory"></param>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Domain.AdvertTrafficMaster.AdvertTrafficMasterRepository.Add_Record(MWM.API.Advert.Service.Domain.AdvertTrafficMaster.AdvertTrafficMasterEntity)">
+            <summary>
+            新增資料
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Domain.AdvertTrafficMaster.AdvertTrafficMasterRepository.Update_Record(MWM.API.Advert.Service.Domain.AdvertTrafficMaster.AdvertTrafficMasterEntity,System.Int32)">
+            <summary>
+            更新資料
+            </summary>
+            <param name="entity"></param>
+            <param name="account_id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Domain.AdvertTrafficMaster.IAdvertTrafficMasterRepository">
+            <summary>
+            流量主後台-我的廣告
+            </summary>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Domain.AdvertTrafficMaster.IAdvertTrafficMasterRepository.Add_Record(MWM.API.Advert.Service.Domain.AdvertTrafficMaster.AdvertTrafficMasterEntity)">
+            <summary>
+            新增
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Domain.AdvertTrafficMaster.IAdvertTrafficMasterRepository.Update_Record(MWM.API.Advert.Service.Domain.AdvertTrafficMaster.AdvertTrafficMasterEntity,System.Int32)">
+            <summary>
+            更新
+            </summary>
+            <param name="entity"></param>
+            <param name="account_id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Domain.AdvertTrafficMaster.IAdvertTrafficMasterRepository.Del_Record(System.Int32,System.Int32)">
+            <summary>
+            刪除
+            </summary>
+            <param name="id"></param>
+            <param name="types"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Domain.AdvertTrafficMaster.IAdvertTrafficMasterRepository.GetRecords(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            取列表
+            </summary>
+            <param name="account_id"></param>
+            <param name="ads_type"></param>
+            <param name="index"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Domain.DefaultAdvert.DefaultAdvertEntity">
+            <summary>
+            預設全站聯盟廣告
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.DefaultAdvert.DefaultAdvertEntity.id">
+            <summary>
+             唯一值
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.DefaultAdvert.DefaultAdvertEntity.default_ads_type">
+            <summary>
+            0:漂浮廣告,1:全站彈跳廣告,2:片頭彈窗廣告,3:上方橫幅廣告,4:影片banner廣告
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.DefaultAdvert.DefaultAdvertEntity.hyper_link">
+            <summary>
+            廣告超連結
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.DefaultAdvert.DefaultAdvertEntity.image_link">
+            <summary>
+            圖片路徑
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.DefaultAdvert.DefaultAdvertEntity.desc">
+            <summary>
+            說明
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.DefaultAdvert.DefaultAdvertEntity.banner_sort">
+            <summary>
+            上方橫幅廣告排序
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.DefaultAdvert.DefaultAdvertEntity.position">
+            <summary>
+            廣告位置
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.DefaultAdvert.DefaultAdvertEntity.ctime">
+            <summary>
+            建立時間
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.DefaultAdvert.DefaultAdvertEntity.utime">
+            <summary>
+            更新時間
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.DefaultAdvert.DefaultAdvertEntity.state">
+            <summary>
+            0:停用,1:啟用
+            </summary>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Domain.DefaultAdvert.DefaultAdvertRepository">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Domain.DefaultAdvert.DefaultAdvertRepository.#ctor(Phoenixnet.Extensions.Data.MySql.IDbFactory)">
+            <summary>
+            建構
+            </summary>
+            <param name="dbFactory"></param>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Domain.DefaultAdvert.DefaultAdvertRepository.Add_Record(MWM.API.Advert.Service.Domain.DefaultAdvert.DefaultAdvertEntity)">
+            <summary>
+            
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Domain.DefaultAdvert.DefaultAdvertRepository.Update_Record(MWM.API.Advert.Service.Domain.DefaultAdvert.DefaultAdvertEntity)">
+            <summary>
+            更新單筆資料
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Domain.DefaultAdvert.DefaultAdvertRepository.Del_Record(System.Int32,System.Int32)">
+            <summary>
+            刪除單筆資料
+            </summary>
+            <param name="id"></param>
+            <param name="types"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Domain.DefaultAdvert.DefaultAdvertRepository.GetRecords(System.String,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            取得列表
+            </summary>
+            <param name="query_str"></param>
+            <param name="ads_type"></param>
+            <param name="index"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Domain.DefaultAdvert.IDefaultAdvertRepository">
+            <summary>
+            預設廣告-Service Layer
+            </summary>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Domain.DefaultAdvert.IDefaultAdvertRepository.Add_Record(MWM.API.Advert.Service.Domain.DefaultAdvert.DefaultAdvertEntity)">
+            <summary>
+            新增
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Domain.DefaultAdvert.IDefaultAdvertRepository.Update_Record(MWM.API.Advert.Service.Domain.DefaultAdvert.DefaultAdvertEntity)">
+            <summary>
+            更新
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Domain.DefaultAdvert.IDefaultAdvertRepository.Del_Record(System.Int32,System.Int32)">
+            <summary>
+            刪除
+            </summary>
+            <param name="id"></param>
+            <param name="types"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Domain.DefaultAdvert.IDefaultAdvertRepository.GetRecords(System.String,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="query_str"></param>
+            <param name="ads_type"></param>
+            <param name="index"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Domain.SponsorAdvertTrafficMaster.ISponsorAdvertTrafficMasterRepository">
+            <summary>
+            流量主-全民贊助廣告
+            </summary>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Domain.SponsorAdvertTrafficMaster.ISponsorAdvertTrafficMasterRepository.GetRecords(System.String,System.Int32,System.Int32)">
+            <summary>
+            取列表
+            </summary>
+            <param name="query_str"></param>
+            <param name="index"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Domain.SponsorAdvertTrafficMaster.ISponsorAdvertTrafficMasterRepository.Del_Record(System.Int32)">
+            <summary>
+            刪除
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Domain.SponsorAdvertTrafficMaster.ISponsorAdvertTrafficMasterRepository.Update_Record(MWM.API.Advert.Service.Domain.SponsorAdvertTrafficMaster.SponsorAdvertTrafficMasterEntity)">
+            <summary>
+            更新
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Domain.SponsorAdvertTrafficMaster.ISponsorAdvertTrafficMasterRepository.Add_Record(MWM.API.Advert.Service.Domain.SponsorAdvertTrafficMaster.SponsorAdvertTrafficMasterEntity)">
+            <summary>
+            新增
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Domain.SponsorAdvertTrafficMaster.SponsorAdvertTrafficMasterEntity">
+            <summary>
+            流量主-全民贊助廣告
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.SponsorAdvertTrafficMaster.SponsorAdvertTrafficMasterEntity.id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.SponsorAdvertTrafficMaster.SponsorAdvertTrafficMasterEntity.account_id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.SponsorAdvertTrafficMaster.SponsorAdvertTrafficMasterEntity.image_link">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.SponsorAdvertTrafficMaster.SponsorAdvertTrafficMasterEntity.hyper_link">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.SponsorAdvertTrafficMaster.SponsorAdvertTrafficMasterEntity.device_type">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.SponsorAdvertTrafficMaster.SponsorAdvertTrafficMasterEntity.position_type">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.SponsorAdvertTrafficMaster.SponsorAdvertTrafficMasterEntity.desc">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.SponsorAdvertTrafficMaster.SponsorAdvertTrafficMasterEntity.ctime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.SponsorAdvertTrafficMaster.SponsorAdvertTrafficMasterEntity.utime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Domain.SponsorAdvertTrafficMaster.SponsorAdvertTrafficMasterRepository">
+            <summary>
+            流量主-全民贊助廣告
+            </summary>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Domain.SponsorAdvertTrafficMaster.SponsorAdvertTrafficMasterRepository.#ctor(Phoenixnet.Extensions.Data.MySql.IDbFactory)">
+            <summary>
+            
+            </summary>
+            <param name="dbFactory"></param>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Domain.SponsorAdvert.ISponsorAdvertRepository">
+            <summary>
+            後台-贊助廣告
+            </summary>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Domain.SponsorAdvert.ISponsorAdvertRepository.GetRecords(System.String,System.Int32,System.Int32)">
+            <summary>
+            取列表
+            </summary>
+            <param name="query_str"></param>
+            <param name="index"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Domain.SponsorAdvert.ISponsorAdvertRepository.Del_Record(System.Int32)">
+            <summary>
+            刪除
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Domain.SponsorAdvert.ISponsorAdvertRepository.Update_Record(MWM.API.Advert.Service.Domain.SponsorAdvert.SponsorAdverEntity)">
+            <summary>
+            更新
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Domain.SponsorAdvert.ISponsorAdvertRepository.Add_Record(MWM.API.Advert.Service.Domain.SponsorAdvert.SponsorAdverEntity)">
+            <summary>
+            新增
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Domain.SponsorAdvert.SponsorAdverEntity">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.SponsorAdvert.SponsorAdverEntity.id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.SponsorAdvert.SponsorAdverEntity.image_link">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.SponsorAdvert.SponsorAdverEntity.hyper_link">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.SponsorAdvert.SponsorAdverEntity.device_type">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.SponsorAdvert.SponsorAdverEntity.position_type">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.SponsorAdvert.SponsorAdverEntity.desc">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.SponsorAdvert.SponsorAdverEntity.ctime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.SponsorAdvert.SponsorAdverEntity.utime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Domain.SponsorAdvert.SponsorAdvertRepository">
+            <summary>
+             後台人員-操作贊助廣告
+            </summary>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Domain.SponsorAdvert.SponsorAdvertRepository.#ctor(Phoenixnet.Extensions.Data.MySql.IDbFactory)">
+            <summary>
+                建構式
+            </summary>
+            <param name="dbFactory"></param>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Domain.SponsorAdvert.SponsorAdvertRepository.GetRecords(System.String,System.Int32,System.Int32)">
+            <summary>
+                後台人員-取贊助廣告列表
+            </summary>
+            <param name="query_str"></param>
+            <param name="index"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Domain.SponsorAdvert.SponsorAdvertRepository.Del_Record(System.Int32)">
+            <summary>
+                後台人員-刪除贊助廣告
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Domain.SponsorAdvert.SponsorAdvertRepository.Update_Record(MWM.API.Advert.Service.Domain.SponsorAdvert.SponsorAdverEntity)">
+            <summary>
+                後台人員-更新贊助廣告
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Domain.SponsorAdvert.SponsorAdvertRepository.Add_Record(MWM.API.Advert.Service.Domain.SponsorAdvert.SponsorAdverEntity)">
+            <summary>
+                後台人員-新增贊助廣告
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Domain.VideoAdvert.IVideoAdvertRepository">
+            <summary>
+            官網後台-影片區域操作
+            </summary>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Domain.VideoAdvert.IVideoAdvertRepository.GetRecords(System.String,System.Int32,System.Int32)">
+            <summary>
+            取列表
+            </summary>
+            <param name="query_str"></param>
+            <param name="index"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Domain.VideoAdvert.IVideoAdvertRepository.Del_Record(System.Int32)">
+            <summary>
+            刪除
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Domain.VideoAdvert.IVideoAdvertRepository.Update_Record(MWM.API.Advert.Service.Domain.VideoAdvert.video.VideoAdvertEntity)">
+            <summary>
+            更新
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Domain.VideoAdvert.IVideoAdvertRepository.Add_Record(MWM.API.Advert.Service.Domain.VideoAdvert.video.VideoAdvertEntity)">
+            <summary>
+            新增
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Domain.VideoAdvert.video.VideoAdvertEntity">
+            <summary>
+            聯盟廣告-影片廣告
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.VideoAdvert.video.VideoAdvertEntity.id">
+            <summary>
+            流水號
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.VideoAdvert.video.VideoAdvertEntity.title">
+            <summary>
+            廣告名稱
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.VideoAdvert.video.VideoAdvertEntity.hyper_link">
+            <summary>
+            廣告連結
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.VideoAdvert.video.VideoAdvertEntity.color">
+            <summary>
+            文字顏色
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.VideoAdvert.video.VideoAdvertEntity.position">
+            <summary>
+            位置
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.VideoAdvert.video.VideoAdvertEntity.advert_text">
+            <summary>
+            廣告文字
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.VideoAdvert.video.VideoAdvertEntity.loop_type">
+            <summary>
+            循環方式
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.VideoAdvert.video.VideoAdvertEntity.default_time">
+            <summary>
+            預設時間
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.VideoAdvert.video.VideoAdvertEntity.video_link">
+            <summary>
+            影片廣告連結
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.VideoAdvert.video.VideoAdvertEntity.skip_time">
+            <summary>
+            廣告可略過時間
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.VideoAdvert.video.VideoAdvertEntity.start_time">
+            <summary>
+            開始時間
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.VideoAdvert.video.VideoAdvertEntity.end_time">
+            <summary>
+            結束時間
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.VideoAdvert.video.VideoAdvertEntity.status">
+            <summary>
+            狀態
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.VideoAdvert.video.VideoAdvertEntity.video_advert_type">
+            <summary>
+            影片廣告類型.0跑馬燈,1影片廣告
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.VideoAdvert.video.VideoAdvertEntity.desc">
+            <summary>
+            備註
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.VideoAdvert.video.VideoAdvertEntity.ctime">
+            <summary>
+            建立時間
+            </summary>
+        </member>
+        <member name="P:MWM.API.Advert.Service.Domain.VideoAdvert.video.VideoAdvertEntity.utime">
+            <summary>
+            更新時間
+            </summary>
+        </member>
+        <member name="T:MWM.API.Advert.Service.Domain.VideoAdvert.video.VideoAdvertRepository">
+            <summary>
+            官網後台-影片區域操作
+            </summary>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Domain.VideoAdvert.video.VideoAdvertRepository.#ctor(Phoenixnet.Extensions.Data.MySql.IDbFactory)">
+            <summary>
+            建構式
+            </summary>
+            <param name="dbFactory"></param>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Domain.VideoAdvert.video.VideoAdvertRepository.GetRecords(System.String,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="query_str"></param>
+            <param name="index"></param>
+            <param name="size"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Domain.VideoAdvert.video.VideoAdvertRepository.Del_Record(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Domain.VideoAdvert.video.VideoAdvertRepository.Update_Record(MWM.API.Advert.Service.Domain.VideoAdvert.video.VideoAdvertEntity)">
+            <summary>
+            更新資料
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MWM.API.Advert.Service.Domain.VideoAdvert.video.VideoAdvertRepository.Add_Record(MWM.API.Advert.Service.Domain.VideoAdvert.video.VideoAdvertEntity)">
+            <summary>
+            新增資料
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MWM.API.Advert.Service.ModuleConfig.ApplicationConfig">
+            <summary>
+            主要服務模組
+            </summary>
+        </member>
+        <member name="T:MWM.API.Advert.Service.ModuleConfig.AuthJwtConfig">
+            <summary>
+            JWT驗證設定
+            </summary>
+        </member>
+        <member name="M:MWM.API.Advert.Service.ModuleConfig.AuthJwtConfig.Load(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            
+            </summary>
+            <param name="services"></param>
+            <param name="configuration"></param>
+        </member>
+        <member name="T:MWM.API.Advert.Service.ModuleConfig.RepositoryConfig">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>
